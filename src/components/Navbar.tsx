@@ -17,7 +17,9 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
             <li>Contact</li>
           </div>
         </ul>
-        <IoCartOutline size={30} className="text-white" />
+        <span className="text-white">
+          <IoCartOutline size={30} />
+        </span>
         <div className="flex justify-end md:w-[15rem]">
           <div
             id="desktop-navbar"
