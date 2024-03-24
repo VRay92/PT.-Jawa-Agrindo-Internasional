@@ -17,15 +17,35 @@ img{
     padding-right: 0.75rem;
 }
 
+td{
+    margin:auto;
+    text-align: center;
+
+}
+
+td>img{
+    margin:auto;
+}
+
+button:active{
+    transform:translateY(1px)
+}
+
+
+  #menu > button::after {
+    width:5rem;
+    height: 2px;
+    background-color: black;
+    transform:translateY(0px)
+  }
+
 @media only screen and (min-width: 768px){
 .container{
-    padding-left: 10rem;
-    padding-right: 10rem;
+padding-left: 10rem;
+padding-right: 10rem;
 }
-body{
-    display:flex;
-    justify-content: center;
-}
+
+
 
 }
     

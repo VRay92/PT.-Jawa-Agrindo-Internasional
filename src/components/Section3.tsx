@@ -5,34 +5,44 @@ interface ISection3Props {}
 
 const Section3: React.FunctionComponent<ISection3Props> = (props) => {
   return (
-    <section className=" bg-[#252b42]">
-      <div className=" text-center justify-center items-center text-white pt-10 container">
+    <section className=" bg-[#ffffff]">
+      <div className=" text-center justify-center items-center text-[#0D2A40] mt-16 h-[40rem] container ">
         <h1 className="text-3xl font-bold">Every Client Matters </h1>
         <p className="mt-5 mb-10 text-sm">
           Problems trying to resolve the conflict between
           <br />
           the two major realms of Classical physics: Newtonian mechanics
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-10">
+        <div className="flex gap-3 md:gap-10 h-[30rem] w-full p-5 overflow-x-auto">
           <Card2
-            url="pic1.png"
-            heading="A single source of truth"
-            description="Newton thought that light was made up of particles, but then it was discovered"
+            url="gambar1.jpg"
+            heading="Crop protection"
+            description="We're the world leader in protecting crops, providing farmers with advanced and sustainable ways to keep plants healthy from sowing to harvesting."
           />
           <Card2
-            url="pic2.png"
-            heading="Fastest way to organize"
-            description={`"Quantum mechanics" is the description of the behaviour of matter`}
+            url="gambar2.jpg"
+            heading="Seeds"
+            description="We're one of the world's largest developer and producers of innovative seeds and traits across grain, oilseeds, vegetables, fruits and flowers."
           />
           <Card2
-            url="pic3.png"
-            heading="Fastest way to take action"
-            description="They describe a universe consisting of bodies moving together"
+            url="gambar3.png"
+            heading="People and culture"
+            description="At Syngenta we strive to become the most trusted and innovative team in agriculture. Here, you'll see the true impact of the work you do."
           />
           <Card2
-            url="pic4.png"
-            heading="Work better together"
-            description="They finally obtained a consistent description of the behaviour"
+            url="gambar4.jpg"
+            heading="Successful crop protection starts with planting"
+            description="Our seed treatments protect the seeds in the soil when they are exposed to insects, nematodes and droughts. ."
+          />
+          <Card2
+            url="gambar5.jpg"
+            heading="Crop protection"
+            description="We're the world leader in protecting crops, providing farmers with advanced and sustainable ways to keep plants healthy from sowing to harvesting."
+          />
+          <Card2
+            url="gambar1.jpg"
+            heading="Crop protection"
+            description="We're the world leader in protecting crops, providing farmers with advanced and sustainable ways to keep plants healthy from sowing to harvesting."
           />
         </div>
       </div>

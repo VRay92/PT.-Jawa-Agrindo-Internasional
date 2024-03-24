@@ -8,16 +8,13 @@ interface ISection5Props {}
 
 const Section5: React.FunctionComponent<ISection5Props> = (props) => {
   return (
-    <section className=" bg-[#252b42] pb-[5rem] ">
-      <div className=" grid grid-cols-2 grid-rows-3 md:flex text-center justify-center items-center text-white md:pt-10 container">
-        <img src="col-md-3.png" className="h-auto md:min-w-[10rem]" />
-        <img src="col-md-3-1.png" className="h-auto md:min-w-[8rem]" />
-        <img src="col-md-3-2.png" className="h-auto md:min-w-[8rem]" />
-        <img src="col-md-3-3.png" className="h-auto md:min-w-[8rem]" />
-        <img src="col-md-3-4.png" className="h-auto md:min-w-[8rem]" />
-        <img src="col-md-3-5.png" className="h-auto md:min-w-[8rem]" />
-      </div>
-    </section>
+    <div className=" flex flex-col gap-10 bg-[#ffffff] px-16 pb-[5rem] pt-10 text-[#0D2A40] md:container md:mx-0 md:flex-row md:pt-20">
+      <img src="macerio.jpg" className="md:h-auto md:w-[8rem] md:flex-1" />
+      <img src="piribac.png" className="md:h-auto md:w-[8rem] md:flex-1" />
+      <img src="kloopir.jpg" className="md:h-auto md:w-[8rem] md:flex-1" />
+      <img src="pounder.jpg" className="md:h-auto md:w-[8rem] md:flex-1" />
+      <img src="vectral.jpg" className="md:h-auto md:w-[8rem] md:flex-1" />
+    </div>
   );
 };
 

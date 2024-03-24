@@ -1,15 +1,22 @@
 import * as React from "react";
+import ReactPlayer from "react-player";
+import dynamic from "next/dynamic";
 
 interface IVideoProps {}
 
 const Video: React.FunctionComponent<IVideoProps> = (props) => {
+  const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+
   return (
-    <iframe
-      className="w-full md:max-w-[40rem] md:w-[40rem] md:ml-0 md:h-[25rem] h-full relative object-cover"
-      src="video1.mp4"
-      allowFullScreen
-      title="room-tour"
-    ></iframe>
+    <div className="flex md:h-auto overflow-hidden bg-slate-400">
+      <ReactPlayer
+        url="video2.mp4"
+        light={<img src="thumbnail-video.png" width="1280px" height="720px" />}
+        controls
+        width="1280px"
+        height="100%"
+      />
+    </div>
   );
 };
 

@@ -1,45 +1,60 @@
+"use client";
 import * as React from "react";
-import Navbar from "./Navbar";
 
-interface IHeroSectionProps {}
+import Navbar from "./Navbar";
+import { useRouter } from "next/navigation";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+interface IHeroSectionProps {
+  children: any;
+}
 
 const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
+  const router = useRouter();
   return (
-    <div className="bg-background bg-cover bg-no-repeat">
-      <Navbar />
-      <div className=""></div>
+    <div className="max-w-[1920px] bg-background bg-cover bg-no-repeat pt-10">
       <header
         id="hero-section"
-        className="flex flex-col md:flex-row justify-center items-center md:h-[500px] container"
+        className="container relative flex flex-col items-center justify-center md:h-[550px] md:flex-row"
       >
         <div
           id="left-section"
-          className="md:w-6/12 pt-[5rem] md:pt-[8rem] justify-center items-center"
+          className="items-center  justify-center md:w-6/12"
         >
-          <div className="text-white text-center md:text-left md:w-[25rem] mb-[5rem] md:mb-[10rem]">
-            <h1 className="text-3xl md:text-6xl font-bold mb-10">
-              First-Class Business Consultant
+          <div className="md:mb-15 mb-[5rem] text-center text-white md:w-[27rem] md:text-left">
+            <h1 className="mb-10 mt-10 text-3xl font-bold md:text-6xl">
+              Your Trusted Partner in Agriculture
             </h1>
             <p className="text-xl">
-              We know how large objects will act, but things on a small scale.
+              Accelerated innovation provides for new game-changing tools
             </p>
-            <div className="flex flex-col md:flex-row justify-center items-center md:justify-between mt-5">
-              <button className="w-6/12 my-5 md:my-0 bg-orange-400 h-[2.5rem] rounded-2xl">
-                Get Quote Now
+            <div className="mt-5 flex flex-col items-center justify-center md:flex-row md:justify-between">
+              <button
+                className="my-5 h-[2.5rem] w-6/12 rounded-2xl bg-orange-400 font-medium hover:bg-white hover:text-orange-400 md:my-0"
+                onClick={() => router.push("/about")}
+              >
+                Find Out More
               </button>
-              <button className="w-2/5 border border-white h-[2.5rem] rounded-2xl">
-                Learn More
+              <button className="h-[2.5rem] w-2/5 rounded-2xl border-2 border-white bg-white bg-opacity-15 font-semibold hover:border-none hover:bg-[#ffc132]">
+                Contact us
               </button>
             </div>
           </div>
         </div>
         <div
           id="right-section"
-          className="flex w-6/12 md:h-[500px] items-center justify-center"
+          className="mb-10 flex h-auto w-full justify-center md:w-6/12"
         >
-          <img src="agent-v 1.png" className="h-full min-w-[20rem]" />
+          <img
+            src="product.png"
+            className="hidden h-[10rem] md:relative md:-bottom-10 md:block md:h-[15rem] "
+          />
+          <img
+            src="macerio2.png"
+            className="margin-auto visible h-[15rem] md:hidden"
+          />
         </div>
       </header>
+      {props.children}
     </div>
   );
 };
