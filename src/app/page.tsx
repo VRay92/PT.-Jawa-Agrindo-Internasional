@@ -17,30 +17,9 @@ import { useState } from "react";
 export default function Home() {
   const [onClick, SetOnClick] = useState(false);
   const router = useRouter();
-  function scrollToAnchor(event: any) {
-    event.preventDefault();
-
-    const targetElement = document.querySelector("#toAnchor");
-
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  }
   return (
     <main className="">
-      <HeroSection>
-        <a
-          className="flex animate-bounce flex-col items-center text-center text-7xl text-white transition-transform"
-          href="#toAnchor"
-          onClick={scrollToAnchor}
-        >
-          <p className="mb-2 text-sm">scroll down</p>
-          <MdKeyboardDoubleArrowDown />
-        </a>
-      </HeroSection>
+      <HeroSection></HeroSection>
       <Section2>
         <div id="toAnchor" />
       </Section2>

@@ -5,9 +5,7 @@ import Navbar from "./Navbar";
 import { useRouter } from "next/navigation";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { getBlogPosts } from "@/utils/contentful";
-interface IHeroSectionProps {
-  children: any;
-}
+interface IHeroSectionProps {}
 
 const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
   const [article, getArticle] = React.useState();
