@@ -9,7 +9,6 @@ import { BiMenuAltRight } from "react-icons/bi";
 interface INavbarProps {}
 
 const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
-  const [onClick, SetOnClick] = React.useState(false);
   const router = useRouter();
   return (
     <div>
@@ -17,12 +16,6 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
         <div className="">
           <div className="flex h-[5rem] items-center align-middle md:justify-between md:px-0 ">
             <img src="logoJAI.png" alt="logo" className="w-[18rem] " />
-            <button
-              className="ml-10 mt-3 block text-4xl text-white hover:text-black active:text-white md:hidden"
-              onClick={() => SetOnClick((prevState) => !prevState)}
-            >
-              <BiMenuAltRight />
-            </button>
 
             <div
               id="menu"
@@ -69,46 +62,6 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
           </div>
         </div>
       </nav>
-      {onClick && (
-        <div className="">
-          <button
-            className="flex h-[3rem] w-full items-center justify-center bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
-            onClick={() => {
-              router.push("/");
-              SetOnClick(false);
-            }}
-          >
-            Home
-          </button>
-          <button
-            className="flex h-[3rem] w-full items-center justify-center bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
-            onClick={() => {
-              router.push("/about");
-              SetOnClick(false);
-            }}
-          >
-            About
-          </button>
-          <button
-            className="flex h-[3rem] w-full items-center justify-center gap-2 bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
-            onClick={() => {
-              router.push("/products");
-              SetOnClick(false);
-            }}
-          >
-            Product
-          </button>
-          <button
-            className="flex h-[3rem] w-full items-center justify-center gap-2 bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
-            onClick={() => {
-              router.push("/teams");
-              SetOnClick(false);
-            }}
-          >
-            Teams
-          </button>
-        </div>
-      )}
     </div>
   );
 };
