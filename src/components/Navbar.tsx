@@ -72,7 +72,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
       {onClick && (
         <div className="">
           <button
-            className="flex h-[5rem] w-full items-center justify-center bg-[#ffc132] align-middle text-xl font-bold text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
+            className="flex h-[3rem] w-full items-center justify-center bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
             onClick={() => {
               router.push("/");
               SetOnClick(false);
@@ -81,7 +81,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
             Home
           </button>
           <button
-            className="flex h-[5rem] w-full items-center justify-center bg-[#ffc132] align-middle text-xl font-bold text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
+            className="flex h-[3rem] w-full items-center justify-center bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
             onClick={() => {
               router.push("/about");
               SetOnClick(false);
@@ -90,7 +90,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
             About
           </button>
           <button
-            className="flex h-[5rem] w-full items-center justify-center gap-2 bg-[#ffc132] align-middle text-xl font-bold text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
+            className="flex h-[3rem] w-full items-center justify-center gap-2 bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
             onClick={() => {
               router.push("/products");
               SetOnClick(false);
@@ -99,7 +99,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
             Product
           </button>
           <button
-            className="flex h-[5rem] w-full items-center justify-center gap-2 bg-[#ffc132] align-middle text-xl font-bold text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
+            className="flex h-[3rem] w-full items-center justify-center gap-2 bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
             onClick={() => {
               router.push("/teams");
               SetOnClick(false);
