@@ -6,18 +6,18 @@ interface IProductsHeroSectionProps {}
 const ProductsHeroSection: React.FunctionComponent<
   IProductsHeroSectionProps
 > = (props) => {
-  function scrollToPesticide(event: any) {
-    event.preventDefault();
+  // function scrollToPesticide(event: any) {
+  //   event.preventDefault();
 
-    const targetElement = document.querySelector("#pesticide");
+  //   const targetElement = document.querySelector("#pesticide");
 
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: "smooth",
-      });
-    }
-  }
+  //   if (targetElement) {
+  //     window.scrollTo({
+  //       top: targetElement.offsetTop,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // }
   return (
     <div className="bg-[url(/herosection-product.jpg)] bg-cover bg-no-repeat pt-10">
       <header
@@ -31,7 +31,6 @@ const ProductsHeroSection: React.FunctionComponent<
         <a
           className="mt-10 animate-bounce text-center text-7xl text-white"
           href="#pesticide"
-          onClick={scrollToPesticide}
         >
           <MdKeyboardDoubleArrowDown />
         </a>
