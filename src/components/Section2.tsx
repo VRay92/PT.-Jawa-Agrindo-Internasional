@@ -23,7 +23,6 @@ const Section2: React.FunctionComponent<ISection2Props> = (props) => {
 
   return (
     <section className=" bg-[#ebecf0] pb-[5rem]">
-      {props.children}
       <div className="container">
         <div className=" items-center justify-center pt-10 text-center text-[#0D2A40]">
           <h1 className="pt-5 text-3xl font-bold">Who We Are </h1>
