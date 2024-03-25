@@ -9,7 +9,7 @@ interface IAboutUsSection1Props {
 }
 
 const AboutUsSection1: React.FunctionComponent<IAboutUsSection1Props> = (
-  props
+  props,
 ) => {
   const [userData1, setUserData1] = React.useState<string[]>([]);
   const [userData2, setUserData2] = React.useState([]);
@@ -36,8 +36,8 @@ const AboutUsSection1: React.FunctionComponent<IAboutUsSection1Props> = (
   }, []);
 
   return (
-    <section className=" bg-[#ebecf0] py-[5rem] container">
-      <div className="text-center justify-center items-center text-[#0D2A40]">
+    <section className=" container bg-[#ebecf0] py-[5rem]">
+      <div className="items-center justify-center text-center text-[#0D2A40]">
         <h1 className="text-3xl font-bold">Meet Our Team </h1>
         <p className="mt-5 text-sm">
           Problems trying to resolve the conflict between
@@ -47,7 +47,7 @@ const AboutUsSection1: React.FunctionComponent<IAboutUsSection1Props> = (
       </div>
       <div
         id="card-container"
-        className=" flex flex-col md:flex-row gap-5 md:gap-10 mt-10 p-5 text-justify"
+        className=" mt-10 flex flex-col gap-5 p-5 text-justify md:flex-row md:gap-10"
       >
         <Card4
           bgcolor="bg-white"
@@ -84,7 +84,7 @@ const AboutUsSection1: React.FunctionComponent<IAboutUsSection1Props> = (
       </div>
       <div>
         <h1
-          className="flex font-bold underline justify-end mr-5 cursor-pointer"
+          className="mr-5 flex cursor-pointer justify-end font-bold underline"
           onClick={() => {
             router.push("/teams");
           }}

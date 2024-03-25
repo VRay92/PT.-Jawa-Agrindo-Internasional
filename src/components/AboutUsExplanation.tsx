@@ -2,9 +2,7 @@
 import * as React from "react";
 import { useRouter } from "next/navigation";
 
-interface IAboutUsExplanationProps {
-  children: any;
-}
+interface IAboutUsExplanationProps {}
 
 const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
   props,
