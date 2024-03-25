@@ -1,5 +1,4 @@
 import * as React from "react";
-import Image from "next/image";
 
 interface IInsecticideProps {}
 
@@ -18,7 +17,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
         <tbody className="w-fit">
           <tr className="h-[10rem]">
             <td className="">
-              <Image width={240} height={240} src="/swift.png" alt="swift" />
+              <img src="swift.png" className="w-[15rem]" />
             </td>
             <td>Swift 550/50EC</td>
             <td>Insecticide Selective Pre & Post-Emergent</td>
@@ -38,7 +37,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image width={240} height={240} src="/axolot.webp" alt="axolot" />
+              <img src="axolot.webp" className="w-[15rem]" />
             </td>
             <td>Axolot 40/160 SC</td>
             <td>
@@ -61,12 +60,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image
-                width={240}
-                height={240}
-                src="/qaishar.webp"
-                alt="qaishar"
-              />
+              <img src="qaishar.webp" className="w-[15rem]" />
             </td>
             <td>Qaishar 10WP</td>
             <td>
@@ -89,12 +83,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image
-                width={240}
-                height={240}
-                src="/armcide.webp"
-                alt="armcide"
-              />
+              <img src="armcide.webp" className="w-[15rem]" />
             </td>
             <td>Armcide 50WG</td>
             <td>
@@ -117,7 +106,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image width={240} height={240} src="/snatch.webp" alt="snatch" />
+              <img src="snatch.webp" className="w-[15rem]" />
             </td>
             <td>Snatch 50/10WG</td>
             <td>
@@ -140,7 +129,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image width={240} height={240} src="/arrow.webp" alt="arrow" />
+              <img src="arrow.webp" className="w-[15rem]" />
             </td>
             <td>Arrow 200EC</td>
             <td>Insecticide Selective</td>
@@ -171,7 +160,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
         <tbody>
           <tr className="h-[10rem]">
             <td>
-              <Image width={240} height={240} src="/swift.png" alt="swift" />
+              <img src="swift.png" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -180,7 +169,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <Image width={240} height={240} src="/axolot.webp" alt="axolot" />
+              <img src="axolot.webp" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -189,12 +178,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <Image
-                width={240}
-                height={240}
-                src="/qaishar.webp"
-                alt="qaishar"
-              />
+              <img src="qaishar.webp" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -203,12 +187,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <Image
-                width={240}
-                height={240}
-                src="/armcide.webp"
-                alt="armcide"
-              />
+              <img src="armcide.webp" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -217,7 +196,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <Image width={240} height={240} src="/snatch.webp" alt="snatch" />
+              <img src="snatch.webp" className="w-[15rem]" />
             </td>
           </tr>
           <tr>

@@ -1,5 +1,4 @@
 import * as React from "react";
-import Image from "next/image";
 
 interface IHerbicideProps {}
 
@@ -18,12 +17,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
         <tbody className="w-fit">
           <tr className="h-[10rem]">
             <td className="">
-              <Image
-                width={240}
-                height={240}
-                src="/macerio.webp"
-                alt="macerio"
-              />
+              <img src="macerio.webp" className="w-[15rem]" />
             </td>
             <td>
               Macerio<sup>TM</sup>52WP
@@ -45,12 +39,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image
-                width={240}
-                height={240}
-                src="/piribac.webp"
-                alt="piribac"
-              />
+              <img src="piribac.webp" className="w-[15rem]" />
             </td>
             <td>
               Piribac<sup>TM</sup>400SC
@@ -75,12 +64,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image
-                width={240}
-                height={240}
-                src="/kloopir.webp"
-                alt="kloopir"
-              />
+              <img src="kloopir.webp" className="w-[15rem]" />
             </td>
             <td>Kloopir 666EC</td>
             <td>
@@ -103,12 +87,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image
-                width={240}
-                height={240}
-                src="/pounder.webp"
-                alt="pounder"
-              />
+              <img src="pounder.webp" className="w-[15rem]" />
             </td>
             <td>Pounder 865SL</td>
             <td>
@@ -131,12 +110,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image
-                width={240}
-                height={240}
-                src="/vectral.webp"
-                alt="vectral"
-              />
+              <img src="vectral.webp" className="w-[15rem]" />
             </td>
             <td>
               Vectral <sup>TM</sup> 200SL
@@ -161,12 +135,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image
-                width={240}
-                height={240}
-                src="/warrantgold.webp"
-                alt="warrantgold"
-              />
+              <img src="warrantgold.webp" className="w-[15rem]" />
             </td>
             <td>Warrant Gold 480SL</td>
             <td>Herbicide Selective</td>
@@ -196,12 +165,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
         <tbody>
           <tr className="h-[10rem]">
             <td>
-              <Image
-                width={240}
-                height={240}
-                src="/macerio.webp"
-                alt="macerio"
-              />
+              <img src="macerio.webp" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -219,12 +183,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <Image
-                width={240}
-                height={240}
-                src="/kloopir.webp"
-                alt="kloopir"
-              />
+              <img src="kloopir.webp" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -233,12 +192,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <Image
-                width={240}
-                height={240}
-                src="/pounder.webp"
-                alt="pounder"
-              />
+              <img src="pounder.webp" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -247,12 +201,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <Image
-                width={240}
-                height={240}
-                src="/vectral.webp"
-                alt="vectral"
-              />
+              <img src="vectral.webp" className="w-[15rem]" />
             </td>
           </tr>
           <tr>

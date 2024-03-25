@@ -1,5 +1,4 @@
 import * as React from "react";
-import Image from "next/image";
 
 interface IAdjuvantProps {}
 
@@ -18,12 +17,7 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
         <tbody className="mb-20 w-fit">
           <tr className="h-[10rem]">
             <td className="">
-              <Image
-                width={240}
-                height={240}
-                src="/sprayboost.webp"
-                alt="sprayboost"
-              />
+              <img src="sprayboost.webp" className="w-[15rem]" />
             </td>
             <td>
               Macerio<sup>TM</sup>52WP
@@ -45,7 +39,7 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <Image width={240} height={240} src="/gaplus.webp" alt="gaplus" />
+              <img src="gaplus.webp" className="w-[15rem]" />
             </td>
             <td>
               Piribac<sup>TM</sup>400SC
@@ -79,12 +73,7 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
         <tbody>
           <tr className="h-[10rem]">
             <td>
-              <Image
-                width={240}
-                height={240}
-                src="/sprayboost.webp"
-                alt="sprayboost"
-              />
+              <img src="sprayboost.webp" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
