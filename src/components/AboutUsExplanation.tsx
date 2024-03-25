@@ -2,7 +2,9 @@
 import * as React from "react";
 import { useRouter } from "next/navigation";
 
-interface IAboutUsExplanationProps {}
+interface IAboutUsExplanationProps {
+  children: string;
+}
 
 const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
   props,
@@ -28,9 +30,9 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
               making farming more efficient, we enable growers to provide
               healthy, high quality food safely and sustainably. Farmers must
               adapt to the effects of climate change, improve the soil and
-              enhance biodiversity, and respond to society's views on food and
-              agricultural technology.And we are transparent about what we're
-              doing and the impact it's making.
+              enhance biodiversity, and respond to societys views on food and
+              agricultural technology.And we are transparent about what were
+              doing and the impact its making.
             </p>
           </div>
         </div>

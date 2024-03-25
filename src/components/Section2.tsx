@@ -74,7 +74,7 @@ const Section2: React.FunctionComponent<ISection2Props> = (props) => {
               />
               <div className="md:ml-10">
                 <h2 className="font-bold">
-                  Connect with Us Today. Reach Out and Let's Start Building
+                  Connect with Us Today. Reach Out and Lets Start Building
                   Together.
                 </h2>
                 <p>Things on a very small scale ...</p>
