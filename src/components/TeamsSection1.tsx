@@ -3,7 +3,12 @@ import * as React from "react";
 import Card5 from "./Card5";
 import axios from "axios";
 
-interface ITeamsSection1Props {}
+interface ITeamsSection1Props {
+  name: string;
+  picture: string;
+  email: string;
+  phone: string;
+}
 
 const TeamsSection1: React.FunctionComponent<ITeamsSection1Props> = (props) => {
   const [userData1, setUserData1] = React.useState([]);
@@ -43,8 +48,8 @@ const TeamsSection1: React.FunctionComponent<ITeamsSection1Props> = (props) => {
   }, []);
 
   return (
-    <section className=" bg-[#ebecf0] py-[5rem] container">
-      <div className="text-center justify-center items-center text-[#0D2A40]">
+    <section className=" container bg-[#ebecf0] py-[5rem]">
+      <div className="items-center justify-center text-center text-[#0D2A40]">
         <h1 className="text-3xl font-bold">Meet Our Team </h1>
         <p className="mt-5 text-sm">
           Problems trying to resolve the conflict between
@@ -54,7 +59,7 @@ const TeamsSection1: React.FunctionComponent<ITeamsSection1Props> = (props) => {
       </div>
       <div
         id="card-container"
-        className=" flex flex-col md:flex-row gap-5 md:gap-10 mt-10 p-5"
+        className=" mt-10 flex flex-col gap-5 p-5 md:flex-row md:gap-10"
       >
         <Card5
           textcolor="text-teal-800"
@@ -91,7 +96,7 @@ const TeamsSection1: React.FunctionComponent<ITeamsSection1Props> = (props) => {
       </div>
       <div
         id="card-container"
-        className=" flex flex-col md:flex-row gap-5 md:gap-10 p-5"
+        className=" flex flex-col gap-5 p-5 md:flex-row md:gap-10"
       >
         <Card5
           textcolor="text-teal-800"

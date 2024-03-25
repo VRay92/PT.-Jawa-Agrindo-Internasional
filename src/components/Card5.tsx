@@ -8,6 +8,7 @@ interface ICard5Props {
   occupation: string;
   email: string;
   phone: string;
+  name: string;
 }
 
 const Card5: React.FunctionComponent<ICard5Props> = (props) => {

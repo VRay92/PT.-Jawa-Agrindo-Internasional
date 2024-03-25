@@ -11,16 +11,16 @@ const ProductsCatalogue: React.FunctionComponent<IProductsCatalogueProps> = (
 ) => {
   const [option, SetOption] = React.useState<number>(1);
   return (
-    <section className=" container w-full bg-[#ffffff] ">
+    <section className="container w-full bg-[#ffffff]">
       <div id="pesticide" className="mt-10  text-xl text-[#0D2A40]">
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
           {option === 1 ? (
-            <h1 className="flex h-12 w-40 items-center justify-center bg-[#ffc132] text-center  text-white underline decoration-white">
+            <h1 className="flex h-12 w-full items-center justify-center bg-[#ffc132] text-center text-white  underline decoration-white md:w-40">
               Herbicide
             </h1>
           ) : (
             <button
-              className=" h-[3rem] w-[10rem] text-center hover:bg-[#ffe19a] "
+              className="h-[3rem] w-full text-center hover:bg-[#ffe19a] md:w-[10rem]"
               onClick={() => {
                 SetOption(1);
                 console.log("Nilai option", option);
@@ -30,12 +30,12 @@ const ProductsCatalogue: React.FunctionComponent<IProductsCatalogueProps> = (
             </button>
           )}
           {option === 2 ? (
-            <h1 className=" flex h-12 w-40 items-center justify-center bg-[#7E3F98] text-center text-white underline decoration-white">
+            <h1 className=" flex h-12 w-full items-center justify-center bg-[#7E3F98] text-center text-white underline decoration-white md:w-40">
               Fungicide
             </h1>
           ) : (
             <button
-              className=" h-[3rem] w-[10rem]  text-center hover:bg-[#dc95fa]"
+              className=" h-[3rem] w-full text-center  hover:bg-[#dc95fa] md:w-[10rem]"
               onClick={() => {
                 SetOption(2);
                 console.log("Nilai option", option);
@@ -45,12 +45,12 @@ const ProductsCatalogue: React.FunctionComponent<IProductsCatalogueProps> = (
             </button>
           )}
           {option === 3 ? (
-            <h1 className="flex h-12 w-40 items-center justify-center bg-[#9A1F22] text-center  text-white underline decoration-white">
+            <h1 className="flex h-12 w-full items-center justify-center bg-[#9A1F22] text-center text-white  underline decoration-white md:w-40">
               Insecticide
             </h1>
           ) : (
             <button
-              className=" h-[3rem] w-[10rem]  text-center  hover:bg-[#ff9597] "
+              className="h-[3rem] w-full text-center  hover:bg-[#ff9597]  md:w-[10rem]"
               onClick={() => {
                 SetOption(3);
                 console.log("Nilai option", option);
@@ -60,12 +60,12 @@ const ProductsCatalogue: React.FunctionComponent<IProductsCatalogueProps> = (
             </button>
           )}
           {option === 4 ? (
-            <h1 className="flex h-12 w-40 items-center justify-center bg-[#93C842] text-center text-white underline decoration-white">
+            <h1 className="flex h-12 w-full items-center justify-center bg-[#93C842] text-center text-white underline decoration-white md:w-40">
               Adjuvant
             </h1>
           ) : (
             <button
-              className=" h-[3rem] w-[10rem]  text-center  hover:bg-[#cdf196]  "
+              className=" h-[3rem] w-full text-center  hover:bg-[#cdf196]  md:w-[10rem]  "
               onClick={() => {
                 SetOption(4);
                 console.log("Nilai option", option);

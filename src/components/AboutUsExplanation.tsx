@@ -7,20 +7,20 @@ interface IAboutUsExplanationProps {
 }
 
 const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
-  props
+  props,
 ) => {
   const router = useRouter();
   return (
     <header
       id="section"
-      className="flex flex-col md:flex-row mt-[5rem] w-full text-center md:text-justify md:h-auto container"
+      className="container mt-[5rem] flex w-full flex-col text-center md:h-auto md:flex-row md:text-justify"
     >
       {props.children}
       <div className="text-[#0D2A40]">
-        <div className="flex flex-col md:flex-row w-full justify-center">
-          <img src="value.jpg" className="md:w-[35rem] h-fit md:mb-5" />
-          <div className="md:ml-[5rem] mb-20">
-            <h1 className="text-3xl md:text-6xl text-center md:text-left md:font-bold mt-10 md:mt-0 mb-5">
+        <div className="flex w-full flex-col justify-center md:flex-row">
+          <img src="value.jpg" className="h-fit md:mb-5 md:w-[35rem]" />
+          <div className="mb-20 md:ml-[5rem]">
+            <h1 className="mb-5 mt-10 text-center text-3xl md:mt-0 md:text-left md:text-6xl md:font-bold">
               About our company
             </h1>
             <p className="text-base md:text-justify">
@@ -36,10 +36,10 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center md:flex-row mt-10 w-full text-center md:text-justify">
+        <div className="mt-10 flex w-full flex-col justify-center text-center md:flex-row md:text-justify">
           <img src="aboutus1.jpg" className="md:w-[35rem]" />
-          <div className="md:ml-[5rem] mb-20">
-            <h2 className="text-2xl mb-1 font-semibold mt-10 md:mt-0 ">
+          <div className="mb-20 md:ml-[5rem]">
+            <h2 className="mb-1 mt-10 text-2xl font-semibold md:mt-0 ">
               1 June 2023
             </h2>
             <p>
@@ -48,11 +48,11 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row mt-10 text-center md:text-justify">
+        <div className="mt-10 flex flex-col text-center md:flex-row md:text-justify">
           <img src="aboutus2.jpg" className="md:w-[35rem]" />
 
-          <div className="md:ml-[5rem] text-center md:text-justify mb-20">
-            <h2 className="text-2xl mb-1 font-semibold mt-10 md:mt-0 ">
+          <div className="mb-20 text-center md:ml-[5rem] md:text-justify">
+            <h2 className="mb-1 mt-10 text-2xl font-semibold md:mt-0 ">
               8 November 2023
             </h2>
             <p>
@@ -61,10 +61,10 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row mt-10  ">
+        <div className="mt-10 flex flex-col md:flex-row  ">
           <img src="aboutus3.avif" className="md:w-[35rem]" />
-          <div className="md:ml-[5rem] text-center md:text-justify mb-20">
-            <h2 className=" text-2xl mb-1 font-semibold mt-10 md:mt-0 ">
+          <div className="mb-20 text-center md:ml-[5rem] md:text-justify">
+            <h2 className=" mb-1 mt-10 text-2xl font-semibold md:mt-0 ">
               17 January 2024
             </h2>
             <p>
@@ -75,10 +75,10 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
             </p>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row mt-10 text-center md:text-justify">
+        <div className="mt-10 flex flex-col text-center md:flex-row md:text-justify">
           <img src="aboutus4.jpg" className="md:w-[35rem]" />
-          <div className="md:ml-[5rem] mb-20">
-            <h2 className="text-2xl mb-1 font-semibold mt-10 md:mt-0 ">
+          <div className="mb-20 md:ml-[5rem]">
+            <h2 className="mb-1 mt-10 text-2xl font-semibold md:mt-0 ">
               5 March 2024
             </h2>
             <p>
@@ -87,8 +87,8 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
             </p>
           </div>
         </div>
-        <div className="mt-10 mb-[10rem] text-center ">
-          <h2 className="text-2xl mb-1">End 2024</h2>
+        <div className="mb-[10rem] mt-10 text-center ">
+          <h2 className="mb-1 text-2xl">End 2024</h2>
           <p>
             Dynamic Shared Ownership rolled out to every corner of #TeamBayer.
           </p>

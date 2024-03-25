@@ -4,12 +4,15 @@ import * as React from "react";
 import Navbar from "./Navbar";
 import { useRouter } from "next/navigation";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import { getBlogPosts } from "@/utils/contentful";
 interface IHeroSectionProps {
   children: any;
 }
 
 const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
+  const [article, getArticle] = React.useState();
   const router = useRouter();
+
   return (
     <div className="max-w-[1920px] bg-background bg-cover bg-no-repeat pt-10">
       <header
@@ -46,7 +49,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
         >
           <img
             src="product.png"
-            className="hidden h-[10rem] md:relative md:-bottom-10 md:block md:h-[15rem] "
+            className="hidden h-[10rem] md:relative md:-bottom-10 md:block md:h-[15rem]"
           />
           <img
             src="macerio2.png"

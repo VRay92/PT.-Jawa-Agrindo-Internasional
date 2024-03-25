@@ -39,7 +39,7 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="piribac.png" className="w-[15rem]" />
+              <img src="piribac.png" className="w-[15rem]"/>
             </td>
             <td>
               Piribac<sup>TM</sup>400SC

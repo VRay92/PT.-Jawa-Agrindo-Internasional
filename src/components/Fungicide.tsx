@@ -110,13 +110,3 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 };
 
 export default Fungicide;
-{
-  /* <div className="flex flex-col w-6/12 space-y-10 pt-10">
-        <img src="kloopir.jpg" className="w-[15rem]" />
-      </div>
-      <div className="flex  flex-col w-6/12 h-[20rem]">
-        <img src="pounder.jpg" />
-        <img src="vectral.jpg" />
-        <img src="piribac.png" />
-      </div> */
-}
