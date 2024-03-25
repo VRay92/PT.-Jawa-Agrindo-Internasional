@@ -1,4 +1,5 @@
 import * as React from "react";
+import Image from "next/image";
 
 interface IFungicideProps {}
 
@@ -17,7 +18,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
         <tbody className="w-fit">
           <tr className="h-[10rem]">
             <td className="">
-              <img src="nostro.webp" className="w-[15rem]" />
+              <Image width={240} height={240} src="/nostro.webp" alt="nostro" />
             </td>
             <td>Nostro 440EC</td>
             <td>Fungicide Selective Pre & Post-Emergent</td>
@@ -37,7 +38,12 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="partners.webp" className="w-[15rem]" />
+              <Image
+                width={240}
+                height={240}
+                src="/partners.webp"
+                alt="partners"
+              />
             </td>
             <td>Partners 722SL</td>
             <td>
@@ -60,7 +66,12 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="fenapir.webp" className="w-[15rem]" />
+              <Image
+                width={240}
+                height={240}
+                src="/fenapir.webp"
+                alt="fenapir"
+              />
             </td>
             <td>Fenapir 450SC</td>
             <td>
@@ -83,7 +94,12 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="proteger.webp" className="w-[15rem]" />
+              <Image
+                width={240}
+                height={240}
+                src="/proteger.webp"
+                alt="proteger"
+              />
             </td>
             <td>Proteger</td>
             <td>
@@ -115,7 +131,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
         <tbody>
           <tr className="h-[10rem]">
             <td>
-              <img src="nostro.webp" className="w-[15rem]" />
+              <Image width={240} height={240} src="/nostro.webp" alt="nostro" />
             </td>
           </tr>
           <tr>
@@ -124,7 +140,12 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="partners.webp" className="w-[15rem]" />
+              <Image
+                width={240}
+                height={240}
+                src="/partners.webp"
+                alt="partners"
+              />
             </td>
           </tr>
           <tr>
@@ -133,7 +154,12 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="fenapir.webp" className="w-[15rem]" />
+              <Image
+                width={240}
+                height={240}
+                src="/fenapir.webp"
+                alt="fenapir"
+              />
             </td>
           </tr>
           <tr>
