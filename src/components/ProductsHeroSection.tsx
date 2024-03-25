@@ -6,18 +6,6 @@ interface IProductsHeroSectionProps {}
 const ProductsHeroSection: React.FunctionComponent<
   IProductsHeroSectionProps
 > = (props) => {
-  // function scrollToPesticide(event: any) {
-  //   event.preventDefault();
-
-  //   const targetElement = document.querySelector("#pesticide");
-
-  //   if (targetElement) {
-  //     window.scrollTo({
-  //       top: targetElement.offsetTop,
-  //       behavior: "smooth",
-  //     });
-  //   }
-  // }
   return (
     <div className="bg-[url(/herosection-product.jpg)] bg-cover bg-no-repeat pt-10">
       <header
