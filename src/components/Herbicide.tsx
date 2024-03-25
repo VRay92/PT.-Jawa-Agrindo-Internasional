@@ -17,7 +17,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
         <tbody className="w-fit">
           <tr className="h-[10rem]">
             <td className="">
-              <img src="macerio.jpg" className="w-[15rem]" />
+              <img src="macerio.webp" className="w-[15rem]" />
             </td>
             <td>
               Macerio<sup>TM</sup>52WP
@@ -39,7 +39,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="piribac.png" className="w-[15rem]" />
+              <img src="piribac.webp" className="w-[15rem]" />
             </td>
             <td>
               Piribac<sup>TM</sup>400SC
@@ -64,7 +64,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="kloopir.jpg" className="w-[15rem]" />
+              <img src="kloopir.webp" className="w-[15rem]" />
             </td>
             <td>Kloopir 666EC</td>
             <td>
@@ -87,7 +87,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="pounder.jpg" className="w-[15rem]" />
+              <img src="pounder.webp" className="w-[15rem]" />
             </td>
             <td>Pounder 865SL</td>
             <td>
@@ -110,7 +110,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="vectral.jpg" className="w-[15rem]" />
+              <img src="vectral.webp" className="w-[15rem]" />
             </td>
             <td>
               Vectral <sup>TM</sup> 200SL
@@ -135,7 +135,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="warrant gold logo.png" className="w-[15rem]" />
+              <img src="warrantgold.webp" className="w-[15rem]" />
             </td>
             <td>Warrant Gold 480SL</td>
             <td>Herbicide Selective</td>

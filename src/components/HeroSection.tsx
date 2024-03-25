@@ -5,6 +5,8 @@ import Navbar from "./Navbar";
 import { useRouter } from "next/navigation";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import { getBlogPosts } from "@/utils/contentful";
+import Image from "next/image";
+
 interface IHeroSectionProps {}
 
 const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {

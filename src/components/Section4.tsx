@@ -11,7 +11,7 @@ const Section4: React.FunctionComponent<ISection4Props> = (props) => {
   return (
     <section className=" bg-[#ebecf0] py-[5rem]">
       <div className="container">
-        <div className="text-center justify-center items-center text-[#0D2A40]">
+        <div className="items-center justify-center text-center text-[#0D2A40]">
           <h1 className="text-3xl font-bold">What Clients Say </h1>
           <p className="mt-5 text-sm">
             Problems trying to resolve the conflict between
@@ -21,14 +21,14 @@ const Section4: React.FunctionComponent<ISection4Props> = (props) => {
         </div>
         <div
           id="card-container"
-          className=" flex flex-col md:flex-row gap-5 md:gap-10 justify-between mt-10 p-5"
+          className=" mt-10 flex flex-col justify-between gap-5 p-5 md:flex-row md:gap-10"
         >
           <Card
             bgcolor="bg-white"
             textcolor="text-teal-800"
             name="Regina Miles"
             occupation="Designer"
-            imageURL="profile1.png"
+            imageURL="profile1.webp"
             description="This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space."
           />
           <Card
@@ -36,7 +36,7 @@ const Section4: React.FunctionComponent<ISection4Props> = (props) => {
             textcolor="text-white"
             name="Regina Miles"
             occupation="Designer"
-            imageURL="profile2.png"
+            imageURL="profile2.webp"
             description="This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space."
           ></Card>
           <Card
@@ -44,7 +44,7 @@ const Section4: React.FunctionComponent<ISection4Props> = (props) => {
             textcolor="text-teal-800"
             name="Regina Miles"
             occupation="Designer"
-            imageURL="profile3.png"
+            imageURL="profile3.webp"
             description="This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space."
           ></Card>
         </div>
