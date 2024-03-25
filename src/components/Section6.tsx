@@ -4,15 +4,12 @@ import { LuPhone } from "react-icons/lu";
 import { BiMap } from "react-icons/bi";
 import { FiSend } from "react-icons/fi";
 
-interface ISection6Props {
-  children: any;
-}
+interface ISection6Props {}
 
 const Section6: React.FunctionComponent<ISection6Props> = (props) => {
   return (
     <section className=" bg-[#ebecf0] pb-[5rem] ">
       <div className="container">
-        {props.children}
         <div className=" items-center justify-center text-center text-[#0D2A40] md:pt-10">
           <h1 className="pt-5 text-3xl font-bold">Get In Touch </h1>
           <p className="mt-5 ">

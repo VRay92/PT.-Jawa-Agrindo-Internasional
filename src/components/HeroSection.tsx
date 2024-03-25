@@ -8,12 +8,11 @@ import { getBlogPosts } from "@/utils/contentful";
 import Image from "next/image";
 import { BiMenuAltRight } from "react-icons/bi";
 
-interface IHeroSectionProps {
-  children: any;
-}
+interface IHeroSectionProps {}
 
 const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
   const [onClick, SetOnClick] = React.useState(false);
+  const [article, getArticle] = React.useState();
   const router = useRouter();
 
   return (
@@ -92,7 +91,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
             className="items-center  justify-center md:w-6/12"
           >
             <div className="md:mb-15 mb-[5rem] text-center text-white md:w-[27rem] md:text-left">
-              <h1 className="mb-10 mt-24 text-3xl font-bold md:mt-10 md:text-6xl">
+              <h1 className="mb-10 mt-32 text-3xl font-bold md:mt-10 md:text-6xl">
                 Your Trusted Partner in Agriculture
               </h1>
               <p className="text-xl">
@@ -105,7 +104,9 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
                 >
                   Find Out More
                 </button>
-                {props.children}
+                <button className="h-[2.5rem] w-2/5 rounded-2xl border-2 border-white bg-white bg-opacity-15 font-semibold hover:border-none hover:bg-[#ffc132]">
+                  Contact us
+                </button>
               </div>
             </div>
           </div>
