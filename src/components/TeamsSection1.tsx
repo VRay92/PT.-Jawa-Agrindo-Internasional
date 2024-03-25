@@ -3,22 +3,17 @@ import * as React from "react";
 import Card5 from "./Card5";
 import axios from "axios";
 
-interface ITeamsSection1Props {
-  name: string;
-  picture: string;
-  email: string;
-  phone: string;
-}
+interface ITeamsSection1Props {}
 
 const TeamsSection1: React.FunctionComponent<ITeamsSection1Props> = (props) => {
-  const [userData1, setUserData1] = React.useState([]);
-  const [userData2, setUserData2] = React.useState([]);
-  const [userData3, setUserData3] = React.useState([]);
-  const [userData4, setUserData4] = React.useState([]);
-  const [userData5, setUserData5] = React.useState([]);
-  const [userData6, setUserData6] = React.useState([]);
-  const [userData7, setUserData7] = React.useState([]);
-  const [userData8, setUserData8] = React.useState([]);
+  const [userData1, setUserData1] = React.useState<any>([]);
+  const [userData2, setUserData2] = React.useState<any>([]);
+  const [userData3, setUserData3] = React.useState<any>([]);
+  const [userData4, setUserData4] = React.useState<any>([]);
+  const [userData5, setUserData5] = React.useState<any>([]);
+  const [userData6, setUserData6] = React.useState<any>([]);
+  const [userData7, setUserData7] = React.useState<any>([]);
+  const [userData8, setUserData8] = React.useState<any>([]);
 
   const loadDatabase = async () => {
     try {
@@ -30,14 +25,14 @@ const TeamsSection1: React.FunctionComponent<ITeamsSection1Props> = (props) => {
       const responses6 = await axios.get("https://randomuser.me/api/");
       const responses7 = await axios.get("https://randomuser.me/api/");
       const responses8 = await axios.get("https://randomuser.me/api/");
-      setUserData1(responses1.data.results);
-      setUserData2(responses2.data.results);
-      setUserData3(responses3.data.results);
-      setUserData4(responses4.data.results);
-      setUserData5(responses5.data.results);
-      setUserData6(responses6.data.results);
-      setUserData7(responses7.data.results);
-      setUserData8(responses8.data.results);
+      setUserData1(responses1.data.results[0]);
+      setUserData2(responses2.data.results[0]);
+      setUserData3(responses3.data.results[0]);
+      setUserData4(responses4.data.results[0]);
+      setUserData5(responses5.data.results[0]);
+      setUserData6(responses6.data.results[0]);
+      setUserData7(responses7.data.results[0]);
+      setUserData8(responses8.data.results[0]);
     } catch (error) {
       console.log(error);
     }
@@ -63,35 +58,35 @@ const TeamsSection1: React.FunctionComponent<ITeamsSection1Props> = (props) => {
       >
         <Card5
           textcolor="text-teal-800"
-          name={`${userData1[0]?.name.first} ${userData1[0]?.name.last}`}
+          name1={`${userData1?.name?.first} ${userData1?.name?.last}`}
           occupation="Co-Founder"
-          imageURL={userData1[0]?.picture.large}
-          email={userData1[0]?.email}
-          phone={userData1[0]?.phone}
+          imageURL={userData1?.picture?.large}
+          email={userData1?.email}
+          phone={userData1?.phone}
         ></Card5>
         <Card5
           textcolor="text-teal-800"
-          name={`${userData2[0]?.name.first} ${userData2[0]?.name.last}`}
+          name1={`${userData2?.name?.first} ${userData2?.name?.last}`}
           occupation="Regional Sales Manager"
-          imageURL={userData2[0]?.picture.large}
-          email={userData2[0]?.email}
-          phone={userData2[0]?.phone}
+          imageURL={userData2?.picture?.large}
+          email={userData2?.email}
+          phone={userData2?.phone}
         ></Card5>
         <Card5
           textcolor="text-teal-800"
-          name={`${userData3[0]?.name.first} ${userData3[0]?.name.last}`}
+          name1={`${userData3?.name?.first} ${userData3?.name?.last}`}
           occupation="Regional Sales Manager"
-          imageURL={userData3[0]?.picture.large}
-          email={userData3[0]?.email}
-          phone={userData3[0]?.phone}
+          imageURL={userData3?.picture?.large}
+          email={userData3?.email}
+          phone={userData3?.phone}
         ></Card5>
         <Card5
           textcolor="text-teal-800"
-          name={`${userData4[0]?.name.first} ${userData4[0]?.name.last}`}
+          name1={`${userData4?.name?.first} ${userData4?.name?.last}`}
           occupation="Agronomist"
-          imageURL={userData4[0]?.picture.large}
-          email={userData4[0]?.email}
-          phone={userData4[0]?.phone}
+          imageURL={userData4?.picture?.large}
+          email={userData4?.email}
+          phone={userData4?.phone}
         ></Card5>
       </div>
       <div
@@ -100,35 +95,35 @@ const TeamsSection1: React.FunctionComponent<ITeamsSection1Props> = (props) => {
       >
         <Card5
           textcolor="text-teal-800"
-          name={`${userData5[0]?.name.first} ${userData5[0]?.name.last}`}
+          name1={`${userData5?.name?.first} ${userData5?.name?.last}`}
           occupation="Agronomist"
-          imageURL={userData5[0]?.picture.large}
-          email={userData5[0]?.email}
-          phone={userData5[0]?.phone}
+          imageURL={userData5?.picture?.large}
+          email={userData5?.email}
+          phone={userData5?.phone}
         ></Card5>
         <Card5
           textcolor="text-teal-800"
-          name={`${userData6[0]?.name.first} ${userData6[0]?.name.last}`}
+          name1={`${userData6?.name?.first} ${userData6?.name?.last}`}
           occupation="Designer"
-          imageURL={userData6[0]?.picture.large}
-          email={userData6[0]?.email}
-          phone={userData6[0]?.phone}
+          imageURL={userData6?.picture?.large}
+          email={userData6?.email}
+          phone={userData6?.phone}
         ></Card5>
         <Card5
           textcolor="text-teal-800"
-          name={`${userData7[0]?.name.first} ${userData7[0]?.name.last}`}
+          name1={`${userData7?.name?.first} ${userData7?.name?.last}`}
           occupation="Designer"
-          imageURL={userData7[0]?.picture.large}
-          email={userData7[0]?.email}
-          phone={userData7[0]?.phone}
+          imageURL={userData7?.picture?.large}
+          email={userData7?.email}
+          phone={userData7?.phone}
         ></Card5>
         <Card5
           textcolor="text-teal-800"
-          name={`${userData8[0]?.name.first} ${userData8[0]?.name.last}`}
+          name1={`${userData8?.name?.first} ${userData8?.name?.last}`}
           occupation="Sales"
-          imageURL={userData8[0]?.picture.large}
-          email={userData8[0]?.email}
-          phone={userData8[0]?.phone}
+          imageURL={userData8?.picture?.large}
+          email={userData8?.email}
+          phone={userData8?.phone}
         ></Card5>
       </div>
     </section>

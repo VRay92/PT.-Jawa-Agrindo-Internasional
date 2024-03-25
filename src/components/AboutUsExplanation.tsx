@@ -2,9 +2,7 @@
 import * as React from "react";
 import { useRouter } from "next/navigation";
 
-interface IAboutUsExplanationProps {
-  children: string;
-}
+interface IAboutUsExplanationProps {}
 
 const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
   props,
@@ -15,7 +13,6 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
       id="section"
       className="container mt-[5rem] flex w-full flex-col text-center md:h-auto md:flex-row md:text-justify"
     >
-      {props.children}
       <div className="text-[#0D2A40]">
         <div className="flex w-full flex-col justify-center md:flex-row">
           <img src="value.jpg" className="h-fit md:mb-5 md:w-[35rem]" />

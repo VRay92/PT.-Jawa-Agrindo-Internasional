@@ -3,12 +3,10 @@ import * as React from "react";
 interface ICard5Props {
   textcolor: string;
   imageURL: string;
-  description: string;
-  firstname: string;
   occupation: string;
   email: string;
   phone: string;
-  name: string;
+  name1: string;
 }
 
 const Card5: React.FunctionComponent<ICard5Props> = (props) => {
@@ -18,7 +16,9 @@ const Card5: React.FunctionComponent<ICard5Props> = (props) => {
         <img src={props.imageURL} className="h-full rounded-full" />
       </div>
       <div className=" space-y-2 p-5 text-xs">
-        <h1 className={`${props.textcolor} text-xl font-bold`}>{props.name}</h1>
+        <h1 className={`${props.textcolor} text-xl font-bold`}>
+          {props.name1}
+        </h1>
         <p className={`${props.textcolor} font-bold`}>{props.occupation}</p>
         <p className="">{props.email}</p>
         <p className="">{props.phone}</p>

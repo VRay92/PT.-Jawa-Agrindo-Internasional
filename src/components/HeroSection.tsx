@@ -55,7 +55,6 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
           />
         </div>
       </header>
-      {props.children}
     </div>
   );
 };

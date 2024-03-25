@@ -12,7 +12,7 @@ const About: React.FunctionComponent<IAboutProps> = (props) => {
   return (
     <div>
       <HeroSection></HeroSection>
-      <AboutUsExplanation></AboutUsExplanation>
+      <AboutUsExplanation />
       <AboutUsSection1 />
       <AboutUsSection2 />
     </div>

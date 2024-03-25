@@ -2,22 +2,19 @@ import * as React from "react";
 
 interface ICard3Props {
   bgcolor: string;
-  textcolor: string;
   children: any;
-  description: string;
   height: string;
-  Card3: any;
 }
 
 const Card3: React.FunctionComponent<ICard3Props> = (props) => {
   return (
     <div
       id="container"
-      className={`flex flex-col mb-10 shadow-xl ${props.bgcolor} w-full ${props.height} items-center justify-center align-middle text-center h-[20rem]`}
+      className={`mb-10 flex flex-col shadow-xl ${props.bgcolor} w-full ${props.height} h-[20rem] items-center justify-center text-center align-middle`}
     >
       <div
         id="description"
-        className={`text-6xl md:text-6xl ${props.textcolor} font-bold bg-transparent mb-3`}
+        className={`mb-3 bg-transparent text-6xl font-bold md:text-6xl`}
       >
         {props.children}
       </div>

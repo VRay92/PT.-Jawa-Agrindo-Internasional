@@ -19,7 +19,7 @@ export default function Home() {
   const router = useRouter();
   return (
     <main className="">
-      <HeroSection></HeroSection>
+      <HeroSection />
       <Section2>
         <div id="toAnchor" />
       </Section2>
