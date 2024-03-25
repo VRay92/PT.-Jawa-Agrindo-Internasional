@@ -20,7 +20,7 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
             <h1 className="mb-5 mt-10 text-center text-3xl md:mt-0 md:text-left md:text-6xl md:font-bold">
               About our company
             </h1>
-            <p className="text-base md:text-justify">
+            <p className="text-justify text-base">
               As a leading science-based agtech company, we help millions of
               farmers around the world to grow safe and nutritious food, while
               taking care of the planet. By improving crop productivity and
@@ -36,10 +36,10 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
         <div className="mt-10 flex w-full flex-col justify-center text-center md:flex-row md:text-justify">
           <img src="aboutus1.jpg" className="md:w-[35rem]" />
           <div className="mb-20 md:ml-[5rem]">
-            <h2 className="mb-1 mt-10 text-2xl font-semibold md:mt-0 ">
+            <h2 className="mb-1 mt-10  text-2xl font-semibold md:mt-0 ">
               1 June 2023
             </h2>
-            <p>
+            <p className="text-justify">
               After joining the company in April 1, Bill Anderson becomes CEO of
               PT. Jawa Agrindo Internasional
             </p>
@@ -52,7 +52,7 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
             <h2 className="mb-1 mt-10 text-2xl font-semibold md:mt-0 ">
               8 November 2023
             </h2>
-            <p>
+            <p className="text-justify">
               PT. Jawa Agrindo Internasional announces new operating model
               Dynamic Shared Ownership to focus on the mission, drive innovation
               and strengthen performance.
@@ -62,10 +62,10 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
         <div className="mt-10 flex flex-col md:flex-row  ">
           <img src="aboutus3.avif" className="md:w-[35rem]" />
           <div className="mb-20 text-center md:ml-[5rem] md:text-justify">
-            <h2 className=" mb-1 mt-10 text-2xl font-semibold md:mt-0 ">
+            <h2 className=" mb-1 mt-10  text-2xl font-semibold md:mt-0 ">
               17 January 2024
             </h2>
-            <p>
+            <p className="text-justify">
               In a joint declaration, the Board of Management of PT. Jawa
               Agrindo Internasional and the employee representatives on the
               Supervisory Board agree on principles for the future of the
@@ -76,18 +76,18 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
         <div className="mt-10 flex flex-col text-center md:flex-row md:text-justify">
           <img src="aboutus4.jpg" className="md:w-[35rem]" />
           <div className="mb-20 md:ml-[5rem]">
-            <h2 className="mb-1 mt-10 text-2xl font-semibold md:mt-0 ">
+            <h2 className="mb-1 mt-10  text-2xl font-semibold md:mt-0 ">
               5 March 2024
             </h2>
-            <p>
+            <p className="text-justify">
               Capital Markets Day - PT. Jawa Agrindo Internasional shares a
               comprehensive update on company direction
             </p>
           </div>
         </div>
-        <div className="mb-[10rem] mt-10 text-center ">
+        <div className="mb-[10rem] mt-10 text-center  ">
           <h2 className="mb-1 text-2xl">End 2024</h2>
-          <p>
+          <p className="text-justify">
             Dynamic Shared Ownership rolled out to every corner of
             #TeamJawaAgrindo.
           </p>

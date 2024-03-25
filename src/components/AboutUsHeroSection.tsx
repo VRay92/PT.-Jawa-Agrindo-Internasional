@@ -1,4 +1,3 @@
-"use client";
 import * as React from "react";
 
 import Navbar from "./Navbar";
@@ -8,11 +7,11 @@ import { getBlogPosts } from "@/utils/contentful";
 import Image from "next/image";
 import { BiMenuAltRight } from "react-icons/bi";
 
-interface IHeroSectionProps {
-  children: any;
-}
+interface IAboutUsHeroSectionProps {}
 
-const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
+const AboutUsHeroSection: React.FunctionComponent<IAboutUsHeroSectionProps> = (
+  props,
+) => {
   const [onClick, SetOnClick] = React.useState(false);
   const router = useRouter();
 
@@ -63,7 +62,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
           <Image
             fill
             sizes="100vw"
-            src="/hero-section.webp"
+            src="/hero-section2.webp"
             alt="hero"
             className="object-cover"
           ></Image>
@@ -72,7 +71,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
           <Image
             fill
             sizes="100vw"
-            src="/hero-section-mobile.webp"
+            src="/hero-section2-mobile.webp"
             alt="hero"
             className="object-cover"
           ></Image>
@@ -92,21 +91,12 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
             className="items-center  justify-center md:w-6/12"
           >
             <div className="md:mb-15 mb-[5rem] text-center text-white md:w-[27rem] md:text-left">
-              <h1 className="mb-10 mt-24 text-3xl font-bold md:mt-10 md:text-6xl">
+              <h1 className="mb-10 mt-24 text-3xl  font-bold md:mt-10 md:text-6xl">
                 Your Trusted Partner in Agriculture
               </h1>
               <p className="text-xl">
                 Accelerated innovation provides for new game-changing tools
               </p>
-              <div className="mt-5 flex flex-col items-center justify-center md:flex-row md:justify-between">
-                <button
-                  className="my-5 h-[2.5rem] w-6/12 rounded-2xl bg-orange-400 font-medium hover:bg-white hover:text-orange-400 md:my-0"
-                  onClick={() => router.push("/about")}
-                >
-                  Find Out More
-                </button>
-                {props.children}
-              </div>
             </div>
           </div>
           <div
@@ -131,4 +121,4 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
   );
 };
 
-export default HeroSection;
+export default AboutUsHeroSection;
