@@ -9,11 +9,11 @@ interface ISection5Props {}
 const Section5: React.FunctionComponent<ISection5Props> = (props) => {
   return (
     <div className=" flex flex-col gap-10 bg-[#ffffff] px-16 pb-[5rem] pt-10 text-[#0D2A40] md:container md:mx-0 md:flex-row md:pt-20">
-      <img src="macerio.jpg" className="md:h-auto md:w-[8rem] md:flex-1" />
-      <img src="piribac.png" className="md:h-auto md:w-[8rem] md:flex-1" />
-      <img src="kloopir.jpg" className="md:h-auto md:w-[8rem] md:flex-1" />
-      <img src="pounder.jpg" className="md:h-auto md:w-[8rem] md:flex-1" />
-      <img src="vectral.jpg" className="md:h-auto md:w-[8rem] md:flex-1" />
+      <img src="macerio.webp" className="md:h-auto md:w-[8rem] md:flex-1" />
+      <img src="piribac.webp" className="md:h-auto md:w-[8rem] md:flex-1" />
+      <img src="kloopir.webp" className="md:h-auto md:w-[8rem] md:flex-1" />
+      <img src="pounder.webp" className="md:h-auto md:w-[8rem] md:flex-1" />
+      <img src="vectral.webp" className="md:h-auto md:w-[8rem] md:flex-1" />
     </div>
   );
 };

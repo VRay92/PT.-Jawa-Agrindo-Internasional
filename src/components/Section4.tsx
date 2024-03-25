@@ -14,9 +14,7 @@ const Section4: React.FunctionComponent<ISection4Props> = (props) => {
         <div className="items-center justify-center text-center text-[#0D2A40]">
           <h1 className="text-3xl font-bold">What Clients Say </h1>
           <p className="mt-5 text-sm">
-            Problems trying to resolve the conflict between
-            <br />
-            the two major realms of Classical physics: Newtonian mechanics
+            Our Satisfied Customer: A Testimonial of Excellence
           </p>
         </div>
         <div
@@ -26,26 +24,26 @@ const Section4: React.FunctionComponent<ISection4Props> = (props) => {
           <Card
             bgcolor="bg-white"
             textcolor="text-teal-800"
-            name="Regina Miles"
-            occupation="Designer"
+            name="Ethan Reynolds"
+            occupation="Customer"
             imageURL="profile1.webp"
-            description="This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space."
+            description="From the moment I reached out to them, they displayed unmatched professionalism and dedication. Their attention to detail and commitment to ensuring customer satisfaction truly impressed me. I highly recommend PT.Jawa Agrindo Internasional to anyone seeking top-notch service."
           />
           <Card
             bgcolor="bg-teal-800"
             textcolor="text-white"
             name="Regina Miles"
-            occupation="Designer"
+            occupation="Customer"
             imageURL="profile2.webp"
-            description="This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space."
+            description="Collaborating with PT.Jawa Agrindo Internasional was a game-changer for our project. Their expertise, creativity, and dedication were evident from the start, and they delivered outstanding results on time and within budget."
           ></Card>
           <Card
             bgcolor="bg-white"
             textcolor="text-teal-800"
-            name="Regina Miles"
-            occupation="Designer"
+            name="Marcus Bennett"
+            occupation="Customer"
             imageURL="profile3.webp"
-            description="This proved to be impossible using the traditional concepts of space and time. Einstein developed a new view of time first and then space."
+            description="Their encouragement and expertise have been invaluable to me, and I am incredibly grateful for their mentorship. I highly recommend to anyone seeking guidance and support on their journey to success."
           ></Card>
         </div>
       </div>

@@ -4,8 +4,8 @@ interface IAdjuvantProps {}
 
 const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
   return (
-    <div className=" flex px-[5rem] pt-20">
-      <table className="w-full">
+    <div className=" flex pb-20 pt-20 md:px-[5rem]">
+      <table className="hidden w-full md:block">
         <thead>
           <tr className="h-[5rem] bg-[#93C842] text-xl text-white">
             <th className="w-1/4">Brands</th>
@@ -14,10 +14,10 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
             <th className="w-1/4">Description</th>
           </tr>
         </thead>
-        <tbody className="w-fit">
+        <tbody className="mb-20 w-fit">
           <tr className="h-[10rem]">
             <td className="">
-              <img src="macerio.jpg" className="w-[15rem]" />
+              <img src="sprayboost.webp" className="w-[15rem]" />
             </td>
             <td>
               Macerio<sup>TM</sup>52WP
@@ -39,7 +39,7 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="piribac.png" className="w-[15rem]"/>
+              <img src="gaplus.webp" className="w-[15rem]" />
             </td>
             <td>
               Piribac<sup>TM</sup>400SC
@@ -59,26 +59,21 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
             </td>
           </tr>
           <tr>
-            <td colSpan={4} className="h-[2rem] border-b-2 border-[#ebecf0]" />
+            <td colSpan={4} className=" h-[2rem] border-b-2 border-[#ebecf0]" />
           </tr>
-
+        </tbody>
+      </table>
+      {/* ////////////////////////////////////////////////////////////////////////// */}
+      <table className="w-full md:hidden ">
+        <thead>
+          <tr className="h-[5rem] w-full bg-[#93C842] text-xl text-white">
+            <th className="w-full">Brands</th>
+          </tr>
+        </thead>
+        <tbody>
           <tr className="h-[10rem]">
-            <td className="">
-              <img src="kloopir.jpg" className="w-[15rem]" />
-            </td>
-            <td>Kloopir 666EC</td>
             <td>
-              Adjuvant Systemic <br /> Post-Emergent
-            </td>
-            <td className="space-y-5 px-5 pt-5 text-start text-base">
-              Systemic post-emergent Adjuvant and arboricide, in concentrated
-              emulsifiable form
-              <br />
-              Crop Target: rice, rubber, palm
-              <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
-                Details
-              </button>
+              <img src="sprayboost.webp" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -86,68 +81,8 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
           </tr>
 
           <tr className="h-[10rem]">
-            <td className="">
-              <img src="pounder.jpg" className="w-[15rem]" />
-            </td>
-            <td>Pounder 865SL</td>
             <td>
-              Adjuvant Selective <br /> Post-Emergent
-            </td>
-            <td className="space-y-5 px-5 pt-5 text-start text-base">
-              Systemic post-emergent Adjuvant and arboricide, in concentrated
-              emulsifiable form
-              <br />
-              Crop Target: rice, rubber, palm
-              <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
-                Details
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td colSpan={4} className="h-[2rem] border-b-2 border-[#ebecf0]" />
-          </tr>
-
-          <tr className="h-[10rem]">
-            <td className="">
-              <img src="vectral.jpg" className="w-[15rem]" />
-            </td>
-            <td>
-              Vectral <sup>TM</sup> 200SL
-            </td>
-            <td>
-              Adjuvant Selective <br /> Pre-Emergent
-            </td>
-            <td className="space-y-5 px-5 pt-5 text-start text-base">
-              Selective systemic pre-emergent Adjuvant in water-soluble solution
-              form, to control broadleaf weeds.
-              <br />
-              Crop Target: palm
-              <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
-                Details
-              </button>
-            </td>
-          </tr>
-          <tr>
-            <td colSpan={4} className="h-[2rem] border-b-2 border-[#ebecf0]" />
-          </tr>
-
-          <tr className="h-[10rem]">
-            <td className="">
-              <img src="warrant gold logo.png" className="w-[15rem]" />
-            </td>
-            <td>Warrant Gold 480SL</td>
-            <td>Adjuvant Selective</td>
-            <td className="space-y-5 px-5 pt-5 text-start text-base">
-              Adjuvant in water-soluble solution form, used to control broadleaf
-              weeds and grass weeds.
-              <br />
-              Crop Target: palm
-              <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
-                Details
-              </button>
+              <img src="gaplus.webp" className="w-full" />
             </td>
           </tr>
           <tr>

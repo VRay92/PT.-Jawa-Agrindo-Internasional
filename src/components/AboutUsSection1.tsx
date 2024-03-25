@@ -41,9 +41,11 @@ const AboutUsSection1: React.FunctionComponent<IAboutUsSection1Props> = (
       <div className="items-center justify-center text-center text-[#0D2A40]">
         <h1 className="text-3xl font-bold">Meet Our Team </h1>
         <p className="mt-5 text-sm">
-          Problems trying to resolve the conflict between
+          Our team is a dynamic blend of individuals, each contributing their
+          diverse skills, experiences,
           <br />
-          the two major realms of Classical physics: Newtonian mechanics
+          and perspectives to collaboratively tackle challenges, innovate
+          solutions, and drive success
         </p>
       </div>
       <div

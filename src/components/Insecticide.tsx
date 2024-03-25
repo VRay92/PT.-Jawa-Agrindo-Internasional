@@ -4,8 +4,8 @@ interface IInsecticideProps {}
 
 const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
   return (
-    <div className=" flex px-[5rem] pt-20">
-      <table className="w-full">
+    <div className=" flex  pb-20 pt-20 md:px-[5rem]">
+      <table className="hidden w-full md:block">
         <thead>
           <tr className="h-[5rem] bg-[#9A1F22] text-xl text-white">
             <th className="w-1/4">Brands</th>
@@ -142,6 +142,70 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
               <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
                 Details
               </button>
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={4} className="h-[2rem] border-b-2 border-[#ebecf0]" />
+          </tr>
+        </tbody>
+      </table>
+      {/* //////////////////////////////////////////////////////////////////////////////////// */}
+
+      <table className="  w-full md:hidden ">
+        <thead>
+          <tr className="h-[5rem] w-full bg-[#9A1F22] text-xl text-white">
+            <th className="w-full">Brands</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="h-[10rem]">
+            <td>
+              <img src="swift.png" className="w-[15rem]" />
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={4} className="h-[2rem] border-b-2 border-[#ebecf0]" />
+          </tr>
+
+          <tr className="h-[10rem]">
+            <td>
+              <img src="axolot.webp" className="w-[15rem]" />
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={4} className="h-[2rem] border-b-2 border-[#ebecf0]" />
+          </tr>
+
+          <tr className="h-[10rem]">
+            <td>
+              <img src="qaishar.webp" className="w-[15rem]" />
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={4} className="h-[2rem] border-b-2 border-[#ebecf0]" />
+          </tr>
+
+          <tr className="h-[10rem]">
+            <td>
+              <img src="armcide.webp" className="w-[15rem]" />
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={4} className="h-[2rem] border-b-2 border-[#ebecf0]" />
+          </tr>
+
+          <tr className="h-[10rem]">
+            <td>
+              <img src="snatch.webp" className="w-[15rem]" />
+            </td>
+          </tr>
+          <tr>
+            <td colSpan={4} className="h-[2rem] border-b-2 border-[#ebecf0]" />
+          </tr>
+
+          <tr className="h-[10rem]">
+            <td>
+              <img src="arrow.webp" className="w-full" />
             </td>
           </tr>
           <tr>

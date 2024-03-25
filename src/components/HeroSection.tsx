@@ -15,8 +15,6 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
   const [article, getArticle] = React.useState();
   const router = useRouter();
 
-  const topMargin = onClick ? "top-60" : "top-32";
-
   return (
     <div>
       {onClick && (
@@ -60,11 +58,20 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
         </div>
       )}
       <div className="">
-        <div className="relative h-[660px]  w-full md:h-[660px]">
+        <div className="relative hidden h-[660px] w-full md:block md:h-[660px]">
           <Image
             fill
             sizes="100vw"
             src="/hero-section.webp"
+            alt="hero"
+            className="object-cover"
+          ></Image>
+        </div>
+        <div className="relative block h-[660px] w-full md:hidden md:h-[660px]">
+          <Image
+            fill
+            sizes="100vw"
+            src="/hero-section-mobile.webp"
             alt="hero"
             className="object-cover"
           ></Image>
@@ -77,7 +84,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
         </button>
         <header
           id="hero-section"
-          className={`container absolute ${onClick ? "top-60" : "top-32"} flex h-[550px] flex-col items-center justify-center md:top-32 md:h-[550px] md:flex-row`}
+          className={`container absolute top-32 flex h-[550px] flex-col items-center justify-center md:top-32 md:h-[550px] md:flex-row`}
         >
           <div
             id="left-section"
@@ -113,6 +120,13 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
             />
           </div>
         </header>
+        <a
+          className="absolute bottom-0 left-1/2 mt-10  animate-bounce items-center justify-center text-center text-7xl text-white"
+          href="#pesticide"
+        >
+          <h1 className="text-sm">scroll down</h1>
+          <MdKeyboardDoubleArrowDown />
+        </a>
       </div>
     </div>
   );

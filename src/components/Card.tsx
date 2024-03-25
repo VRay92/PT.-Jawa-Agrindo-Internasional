@@ -13,7 +13,7 @@ const Card: React.FunctionComponent<ICardProps> = (props) => {
   return (
     <div
       id="container"
-      className={`flex flex-col shadow-xl ${props.bgcolor} h-56 w-full items-center justify-center rounded-lg p-5 text-left align-middle md:px-10`}
+      className={`flex flex-col shadow-xl ${props.bgcolor} h-72 w-full items-center justify-center rounded-lg p-5 text-left align-middle md:px-10`}
     >
       <div className="mb-5 flex w-full justify-between">
         <img src={props.imageURL} className="h-auto w-[6rem]" />

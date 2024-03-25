@@ -31,13 +31,17 @@ button:active{
     transform:translateY(1px)
 }
 
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
 
-  #menu > button::after {
-    width:5rem;
-    height: 2px;
-    background-color: black;
-    transform:translateY(0px)
-  }
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
 
 @media only screen and (min-width: 768px){
 .container{

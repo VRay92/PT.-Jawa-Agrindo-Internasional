@@ -20,13 +20,12 @@ export default function Home() {
   return (
     <main className="">
       <HeroSection />
-      <Section2>
-        <div id="toAnchor" />
-      </Section2>
+      <Section2 />
+
       <Section3 />
       <Section4 />
       <Section5 />
-      <Section6 />
+      <Section6></Section6>
       <Section7 />
       <Section8 />
     </main>

@@ -12,10 +12,8 @@ const Section6: React.FunctionComponent<ISection6Props> = (props) => {
       <div className="container">
         <div className=" items-center justify-center text-center text-[#0D2A40] md:pt-10">
           <h1 className="pt-5 text-3xl font-bold">Get In Touch </h1>
-          <p className="mt-5 text-sm">
-            Problems trying to resolve the conflict between
-            <br />
-            the two major realms of Classical physics: Newtonian mechanics
+          <p className="mt-5 ">
+            Feel free to get in touch with us for assistance
           </p>
         </div>
         <div className="mx-[2rem] mt-16 flex flex-col items-center align-middle md:mx-[9rem] md:flex-row">

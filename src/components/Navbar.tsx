@@ -14,7 +14,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
     <div>
       <nav className=" container relative top-0 bg-[#ffc132]">
         <div className="">
-          <div className="flex h-[5rem] items-center align-middle md:justify-between md:px-0 ">
+          <div className="flex h-[5rem] items-center justify-center align-middle md:justify-between md:px-0 ">
             <img src="logoJAI.png" alt="logo" className="w-[18rem] " />
 
             <div

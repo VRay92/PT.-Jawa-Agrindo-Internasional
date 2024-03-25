@@ -5,9 +5,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import { IoSpeedometerOutline } from "react-icons/io5";
 import { getBlogPosts } from "@/utils/contentful";
 
-interface ISection2Props {
-  children: any;
-}
+interface ISection2Props {}
 
 const Section2: React.FunctionComponent<ISection2Props> = (props) => {
   const [article1, setArticle1] = React.useState([]);
@@ -29,10 +27,12 @@ const Section2: React.FunctionComponent<ISection2Props> = (props) => {
       <div className="container">
         <div className=" items-center justify-center pt-10 text-center text-[#0D2A40]">
           <h1 className="pt-5 text-3xl font-bold">Who We Are </h1>
-          <p className="mt-5 text-sm">
-            Problems trying to resolve the conflict between
-            <br />
-            the two major realms of Classical physics: Newtonian mechanics
+          <p className="mt-5 text-justify text-base">
+            We develop and manufacture a wide range of cutting-edge pesticides
+            tailored to address the diverse needs of farmers, homeowners, and
+            industries worldwide. Our products are tested and formulated to
+            target specific pests while minimizing environmental impact and
+            ensuring user safety.
           </p>
         </div>
         <div
@@ -49,35 +49,36 @@ const Section2: React.FunctionComponent<ISection2Props> = (props) => {
             <h1 className="text-center text-3xl font-bold md:text-left">
               Most trusted in our field
             </h1>
-            <p className="mt-5 text-center text-sm md:text-left">
-              Most calendars are designed for teams. Slate is designed for
-              freelancers who want a simple way to plan their schedule.
+            <p className="mt-5 text-center text-base md:text-left">
+              PT. Jawa Agrindo is renowned for our unwavering commitment to
+              quality, reliability, and effectiveness
             </p>
-            <div className="mt-5 flex items-center gap-5 px-3 md:gap-0 md:px-0">
-              <FaPeopleGroup
-                size={40}
-                color="orange"
-                className="global-class-name"
-              />
-              <div className="md:ml-10">
-                <h2 className="text-md font-bold">
-                  the quick fox jumps over the lazy dog
-                </h2>
-                <p>Things on a very small scale ...</p>
+            <div className="mt-5 flex items-center  gap-5 px-3  md:gap-0 md:px-0">
+              <div className="text-5xl">
+                <FaPeopleGroup color="orange" />
+              </div>
+
+              <div className="ml-3 mt-5 text-justify md:ml-10">
+                <h2 className="text-md  font-bold">Trusted Reliability</h2>
+                <p>
+                  With a long-standing reputation for quality, reliability, and
+                  safety, our products are trusted by customers
+                </p>
               </div>
             </div>
             <div className="mt-14 flex items-center gap-5 px-3 md:gap-0 md:px-0">
-              <IoSpeedometerOutline
-                size={40}
-                color="orange"
-                className="global-class-name"
-              />
-              <div className="md:ml-10">
-                <h2 className="font-bold">
-                  Connect with Us Today. Reach Out and Lets Start Building
-                  Together.
-                </h2>
-                <p>Things on a very small scale ...</p>
+              <div className="text-5xl">
+                <IoSpeedometerOutline
+                  color="orange"
+                  className="global-class-name"
+                />
+              </div>
+              <div className="ml-3 text-justify md:ml-10">
+                <h2 className="font-bold">Cutting-edge Innovation</h2>
+                <p>
+                  Forefront of pesticide development, continuously innovating to
+                  create cutting-edge solutions
+                </p>
               </div>
             </div>
           </div>
