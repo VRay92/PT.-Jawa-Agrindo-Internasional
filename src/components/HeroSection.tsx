@@ -22,7 +22,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
       {onClick && (
         <div className="">
           <button
-            className="flex h-[3rem] w-full items-center justify-center bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
+            className="flex h-[2.5rem] w-full items-center justify-center bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
             onClick={() => {
               router.push("/");
               SetOnClick(false);
@@ -31,7 +31,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
             Home
           </button>
           <button
-            className="flex h-[3rem] w-full items-center justify-center bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
+            className="flex h-[2.5rem] w-full items-center justify-center bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
             onClick={() => {
               router.push("/about");
               SetOnClick(false);
@@ -40,7 +40,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
             About
           </button>
           <button
-            className="flex h-[3rem] w-full items-center justify-center gap-2 bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
+            className="flex h-[2.5rem] w-full items-center justify-center gap-2 bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
             onClick={() => {
               router.push("/products");
               SetOnClick(false);
@@ -49,7 +49,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
             Product
           </button>
           <button
-            className="flex h-[3rem] w-full items-center justify-center gap-2 bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
+            className="flex h-[2.5rem] w-full items-center justify-center gap-2 bg-[#ffc132] align-middle text-xl  text-white shadow-lg hover:bg-[#3A8CB1] hover:text-white"
             onClick={() => {
               router.push("/teams");
               SetOnClick(false);
@@ -60,6 +60,13 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
         </div>
       )}
       <div className="">
+        <button
+          className="absolute right-0 top-2 ml-10 mt-3 block hover:text-white md:hidden"
+          onClick={() => SetOnClick((prevState) => !prevState)}
+        >
+          <BiMenuAltRight size={40} />
+        </button>
+
         <div className="relative hidden h-[660px] w-full md:block">
           <Image
             fill
@@ -78,12 +85,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
             className="object-cover"
           ></Image>
         </div>
-        <button
-          className="ml-10 mt-3 block text-4xl text-white hover:text-black active:text-white md:hidden"
-          onClick={() => SetOnClick((prevState) => !prevState)}
-        >
-          <BiMenuAltRight />
-        </button>
+
         <header
           id="hero-section"
           className={`container absolute top-32 flex h-[550px] flex-col items-center justify-center md:top-32 md:h-[550px] md:flex-row`}

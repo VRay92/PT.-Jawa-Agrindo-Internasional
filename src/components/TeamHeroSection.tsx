@@ -4,21 +4,21 @@ import { useRouter } from "next/navigation";
 interface ITeamsHeroSectionProps {}
 
 const TeamsHeroSection: React.FunctionComponent<ITeamsHeroSectionProps> = (
-  props
+  props,
 ) => {
   const router = useRouter();
   return (
     <div className="">
       <header
         id="hero-section"
-        className="flex flex-col md:flex-row justify-center items-center md:h-[30rem] relative bg-slate-500 container"
+        className="container relative flex flex-col items-center justify-center bg-gradient-to-r from-slate-500 to-transparent md:h-[30rem] md:flex-row"
       >
         <div
           id="left-section"
-          className="md:w-6/12  justify-center items-center "
+          className="items-center  justify-center md:w-6/12 "
         >
-          <div className="text-white text-center md:text-left md:w-[27rem] mb-[5rem] md:mb-15">
-            <h1 className="text-3xl md:text-6xl font-bold mb-10">
+          <div className="md:mb-15 mb-[5rem] text-center text-white md:w-[27rem] md:text-left">
+            <h1 className="mb-10 text-3xl font-bold md:text-6xl">
               Your Trusted Partner in Agriculture
             </h1>
             <p className="text-xl">
@@ -26,8 +26,8 @@ const TeamsHeroSection: React.FunctionComponent<ITeamsHeroSectionProps> = (
             </p>
           </div>
         </div>
-        <div id="right-section" className="md:w-6/12 h-full bg-red-500 ">
-          <img src="team.jpg" className="w-full h-full object-cover" />
+        <div id="right-section" className="h-full bg-red-500 md:w-6/12 ">
+          <img src="team.jpg" className="h-full w-full object-cover" />
         </div>
       </header>
     </div>

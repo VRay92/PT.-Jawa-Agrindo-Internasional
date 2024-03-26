@@ -10,6 +10,7 @@ const ProductsCatalogue: React.FunctionComponent<IProductsCatalogueProps> = (
   props,
 ) => {
   const [option, SetOption] = React.useState<number>(1);
+
   return (
     <section className="container w-full bg-[#ffffff]">
       <div id="pesticide" className="mt-10  text-xl text-[#0D2A40]">
