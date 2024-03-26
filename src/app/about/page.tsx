@@ -11,7 +11,14 @@ interface IAboutProps {}
 const About: React.FunctionComponent<IAboutProps> = (props) => {
   return (
     <div>
-      <HeroSection></HeroSection>
+      <HeroSection>
+        <a
+          href="#contactus"
+          className="flex h-[2.5rem] w-2/5 items-center justify-center rounded-2xl border-2 border-white bg-white bg-opacity-15 text-center font-semibold hover:border-none hover:bg-[#ffc132]"
+        >
+          Contact us
+        </a>
+      </HeroSection>
       <AboutUsExplanation />
       <AboutUsSection1 />
       <AboutUsSection2 />

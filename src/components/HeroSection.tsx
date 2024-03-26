@@ -8,7 +8,9 @@ import { getBlogPosts } from "@/utils/contentful";
 import Image from "next/image";
 import { BiMenuAltRight } from "react-icons/bi";
 
-interface IHeroSectionProps {}
+interface IHeroSectionProps {
+  children: any;
+}
 
 const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
   const [onClick, SetOnClick] = React.useState(false);
@@ -65,7 +67,6 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
             src="/hero-section.webp"
             alt="hero"
             className="object-cover"
-            placeholder="blur"
           ></Image>
         </div>
         <div className="relative block h-[660px] w-full md:hidden">
@@ -75,7 +76,6 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
             src="/hero-section-mobile.webp"
             alt="hero"
             className="object-cover"
-            placeholder="blur"
           ></Image>
         </div>
         <button
@@ -105,9 +105,6 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
                   onClick={() => router.push("/about")}
                 >
                   Find Out More
-                </button>
-                <button className="h-[2.5rem] w-2/5 rounded-2xl border-2 border-white bg-white bg-opacity-15 font-semibold hover:border-none hover:bg-[#ffc132]">
-                  Contact us
                 </button>
               </div>
             </div>
