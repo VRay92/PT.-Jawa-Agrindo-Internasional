@@ -11,11 +11,11 @@ const TeamsHeroSection: React.FunctionComponent<ITeamsHeroSectionProps> = (
     <div className="">
       <header
         id="hero-section"
-        className="container relative flex flex-col items-center justify-center bg-gradient-to-r from-slate-500 to-transparent md:h-[30rem] md:flex-row"
+        className="relative flex flex-col items-center justify-center bg-gradient-to-r from-slate-500 to-slate-700 md:h-[30rem] md:flex-row md:to-transparent"
       >
         <div
           id="left-section"
-          className="items-center  justify-center md:w-6/12 "
+          className="ml-3 mt-10 items-center justify-center md:ml-[10rem] md:w-6/12 "
         >
           <div className="md:mb-15 mb-[5rem] text-center text-white md:w-[27rem] md:text-left">
             <h1 className="mb-10 text-3xl font-bold md:text-6xl">
@@ -26,7 +26,7 @@ const TeamsHeroSection: React.FunctionComponent<ITeamsHeroSectionProps> = (
             </p>
           </div>
         </div>
-        <div id="right-section" className="h-full bg-red-500 md:w-6/12 ">
+        <div id="right-section" className="h-full md:w-6/12 ">
           <img src="team.jpg" className="h-full w-full object-cover" />
         </div>
       </header>
