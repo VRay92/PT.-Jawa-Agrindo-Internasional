@@ -12,8 +12,8 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
   const router = useRouter();
   return (
     <div>
-      <nav className=" container relative top-0 bg-[#ffc132]">
-        <div className="">
+      <nav className="relative top-0 bg-[#ffc132]">
+        <div className="container">
           <div className="flex h-[5rem] items-center justify-center align-middle md:justify-between md:px-0 ">
             <img src="logoJAI.png" alt="logo" className="w-[18rem] " />
 

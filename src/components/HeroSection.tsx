@@ -58,22 +58,24 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
         </div>
       )}
       <div className="">
-        <div className="relative hidden h-[660px] w-full md:block md:h-[660px]">
+        <div className="relative hidden h-[660px] w-full md:block">
           <Image
             fill
             sizes="100vw"
             src="/hero-section.webp"
             alt="hero"
             className="object-cover"
+            placeholder="blur"
           ></Image>
         </div>
-        <div className="relative block h-[660px] w-full md:hidden md:h-[660px]">
+        <div className="relative block h-[660px] w-full md:hidden">
           <Image
             fill
             sizes="100vw"
             src="/hero-section-mobile.webp"
             alt="hero"
             className="object-cover"
+            placeholder="blur"
           ></Image>
         </div>
         <button
