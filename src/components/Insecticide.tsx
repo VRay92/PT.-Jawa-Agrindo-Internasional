@@ -17,7 +17,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
         <tbody className="w-fit">
           <tr className="h-[10rem]">
             <td className="">
-              <img src="swift.png" className="w-[15rem]" />
+              <img src="swift.png" alt="swift" className="w-[15rem]" />
             </td>
             <td>Swift 550/50EC</td>
             <td>Insecticide Selective Pre & Post-Emergent</td>
@@ -37,7 +37,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="axolot.webp" className="w-[15rem]" />
+              <img src="axolot.webp" alt="axolot" className="w-[15rem]" />
             </td>
             <td>Axolot 40/160 SC</td>
             <td>
@@ -60,7 +60,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="qaishar.webp" className="w-[15rem]" />
+              <img src="qaishar.webp" alt="qaishar" className="w-[15rem]" />
             </td>
             <td>Qaishar 10WP</td>
             <td>
@@ -83,7 +83,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="armcide.webp" className="w-[15rem]" />
+              <img src="armcide.webp" alt="armcide" className="w-[15rem]" />
             </td>
             <td>Armcide 50WG</td>
             <td>
@@ -106,7 +106,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="snatch.webp" className="w-[15rem]" />
+              <img src="snatch.webp" alt="snatch" className="w-[15rem]" />
             </td>
             <td>Snatch 50/10WG</td>
             <td>
@@ -129,7 +129,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="arrow.webp" className="w-[15rem]" />
+              <img src="arrow.webp" alt="arrow" className="w-[15rem]" />
             </td>
             <td>Arrow 200EC</td>
             <td>Insecticide Selective</td>
@@ -160,7 +160,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
         <tbody>
           <tr className="h-[10rem]">
             <td>
-              <img src="swift.png" className="w-[15rem]" />
+              <img src="swift.png" alt="swift" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -169,7 +169,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="axolot.webp" className="w-[15rem]" />
+              <img src="axolot.webp" alt="axolot" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -178,7 +178,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="qaishar.webp" className="w-[15rem]" />
+              <img src="qaishar.webp" alt="qaishar" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -187,7 +187,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="armcide.webp" className="w-[15rem]" />
+              <img src="armcide.webp" alt="armcide" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -196,7 +196,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="snatch.webp" className="w-[15rem]" />
+              <img src="snatch.webp" alt="snatch" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -205,7 +205,7 @@ const Insecticide: React.FunctionComponent<IInsecticideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="arrow.webp" className="w-full" />
+              <img src="arrow.webp" alt="arrow" className="w-full" />
             </td>
           </tr>
           <tr>

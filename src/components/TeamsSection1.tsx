@@ -46,10 +46,8 @@ const TeamsSection1: React.FunctionComponent<ITeamsSection1Props> = (props) => {
     <section className=" container bg-[#ebecf0] py-[5rem]">
       <div className="items-center justify-center text-center text-[#0D2A40]">
         <h1 className="text-3xl font-bold">Meet Our Team </h1>
-        <p className="mt-5 text-sm">
-          Problems trying to resolve the conflict between
-          <br />
-          the two major realms of Classical physics: Newtonian mechanics
+        <p className="mt-5 text-lg">
+          We believe in investing in people <br /> and forming meaningful bonds
         </p>
       </div>
       <div
