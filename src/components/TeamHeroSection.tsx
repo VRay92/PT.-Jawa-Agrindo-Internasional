@@ -11,7 +11,7 @@ const TeamsHeroSection: React.FunctionComponent<ITeamsHeroSectionProps> = (
     <div className="">
       <header
         id="hero-section"
-        className="relative flex flex-col items-center justify-center bg-gradient-to-r from-slate-500 to-slate-700 md:h-[30rem] md:flex-row md:to-transparent"
+        className="relative flex flex-col items-center justify-center  bg-slate-700 md:h-[30rem] md:flex-row md:to-transparent"
       >
         <div
           id="left-section"

@@ -1,10 +1,29 @@
 import * as React from "react";
+import { IoCloseSharp } from "react-icons/io5";
+import Modal from "./Modal";
 
 interface IHerbicideProps {}
 
 const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
+  const [active, setActive] = React.useState(false);
+  const [url, setUrl] = React.useState("");
+
+  const closeModal = () => {
+    return setActive(false);
+  };
+
   return (
     <div className=" flex pb-20 pt-20 md:px-[5rem]">
+      {/* modal */}
+      {active && (
+        <div
+          id="photo-product"
+          className="fixed left-0 top-0  z-[36] h-full w-full bg-black bg-opacity-50 backdrop-blur-sm backdrop-filter"
+        >
+          <Modal url={url} click={closeModal}></Modal>
+        </div>
+      )}
+
       <table className="hidden w-full md:block">
         <thead>
           <tr className="h-[5rem] bg-[#ffc132] text-xl text-white">
@@ -17,7 +36,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
         <tbody className="w-fit">
           <tr className="h-[10rem]">
             <td className="">
-              <img src="macerio.webp" className="w-[15rem]" />
+              <img src="macerio.webp" alt="macerio" className="w-[15rem]" />
             </td>
             <td>
               Macerio<sup>TM</sup>52WP
@@ -28,7 +47,13 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
               control both broadleaf and narrow-leaf weeds in corn crops. <br />
               Crop Target: corn
               <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
+              <button
+                className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white"
+                onClick={() => {
+                  setActive(true);
+                  setUrl("macerio.png");
+                }}
+              >
                 Details
               </button>
             </td>
@@ -39,7 +64,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="piribac.webp" className="w-[15rem]" />
+              <img src="piribac.webp" alt="piribac" className="w-[15rem]" />
             </td>
             <td>
               Piribac<sup>TM</sup>400SC
@@ -53,7 +78,13 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
               <br />
               Crop Target: rice
               <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
+              <button
+                className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white"
+                onClick={() => {
+                  setActive(true);
+                  setUrl("piribac.png");
+                }}
+              >
                 Details
               </button>
             </td>
@@ -64,7 +95,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="kloopir.webp" className="w-[15rem]" />
+              <img src="kloopir.webp" alt="kloopir" className="w-[15rem]" />
             </td>
             <td>Kloopir 666EC</td>
             <td>
@@ -76,7 +107,13 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
               <br />
               Crop Target: rice, rubber, palm
               <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
+              <button
+                className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white"
+                onClick={() => {
+                  setActive(true);
+                  setUrl("kloopir.png");
+                }}
+              >
                 Details
               </button>
             </td>
@@ -87,7 +124,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="pounder.webp" className="w-[15rem]" />
+              <img src="pounder.webp" alt="pounder" className="w-[15rem]" />
             </td>
             <td>Pounder 865SL</td>
             <td>
@@ -99,7 +136,13 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
               <br />
               Crop Target: rice, rubber, palm
               <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
+              <button
+                className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white"
+                onClick={() => {
+                  setActive(true);
+                  setUrl("pounder.png");
+                }}
+              >
                 Details
               </button>
             </td>
@@ -110,7 +153,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="vectral.webp" className="w-[15rem]" />
+              <img src="vectral.webp" alt="vectral" className="w-[15rem]" />
             </td>
             <td>
               Vectral <sup>TM</sup> 200SL
@@ -124,7 +167,13 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
               <br />
               Crop Target: palm
               <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
+              <button
+                className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white"
+                onClick={() => {
+                  setActive(true);
+                  setUrl("vectral.png");
+                }}
+              >
                 Details
               </button>
             </td>
@@ -135,7 +184,11 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="warrantgold.webp" className="w-[15rem]" />
+              <img
+                src="warrantgold.webp"
+                alt="warrantgold"
+                className="w-[15rem]"
+              />
             </td>
             <td>Warrant Gold 480SL</td>
             <td>Herbicide Selective</td>
@@ -165,7 +218,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
         <tbody>
           <tr className="h-[10rem]">
             <td>
-              <img src="macerio.webp" className="w-[15rem]" />
+              <img src="macerio.webp" alt="macerio" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -174,7 +227,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="piribac.webp" className="w-[15rem]" />
+              <img src="piribac.webp" alt="piribac" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -183,7 +236,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="kloopir.webp" className="w-[15rem]" />
+              <img src="kloopir.webp" alt="kloopir" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -192,7 +245,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="pounder.webp" className="w-[15rem]" />
+              <img src="pounder.webp" alt="pounder" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -201,7 +254,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="vectral.webp" className="w-[15rem]" />
+              <img src="vectral.webp" alt="vectral" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -210,7 +263,7 @@ const Herbicide: React.FunctionComponent<IHerbicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="warrantgold.webp" className="w-full" />
+              <img src="warrantgold.webp" alt="warrant" className="w-full" />
             </td>
           </tr>
           <tr>

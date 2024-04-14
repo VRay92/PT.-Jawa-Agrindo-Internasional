@@ -27,7 +27,7 @@ const Section4: React.FunctionComponent<ISection4Props> = (props) => {
             name="Ethan Reynolds"
             occupation="Customer"
             imageURL="profile1.webp"
-            description="From the moment I reached out to them, they displayed unmatched professionalism and dedication. Their attention to detail and commitment to ensuring customer satisfaction truly impressed me. I highly recommend PT.Jawa Agrindo Internasional to anyone seeking top-notch service."
+            description="From the moment I reached out to them, they displayed unmatched professionalism and dedication. Their attention to detail and commitment to ensuring customer satisfaction truly impressed me. I highly recommend PT.Jawa Agrindo Internasional."
           />
           <Card
             bgcolor="bg-teal-800"

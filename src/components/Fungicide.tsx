@@ -1,10 +1,25 @@
 import * as React from "react";
+import Modal from "./Modal";
 
 interface IFungicideProps {}
 
 const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
+  const [active, setActive] = React.useState(false);
+  const [url, setUrl] = React.useState("");
+  const closeModal = () => {
+    return setActive(false);
+  };
   return (
     <div className=" flex pb-20 pt-20 md:px-[5rem]">
+      {/* modal */}
+      {active && (
+        <div
+          id="photo-product"
+          className="fixed left-0 top-0  z-[36] h-full w-full bg-black bg-opacity-50 backdrop-blur-sm backdrop-filter"
+        >
+          <Modal url={url} click={closeModal}></Modal>
+        </div>
+      )}
       <table className="hidden w-full md:block">
         <thead>
           <tr className="h-[5rem] bg-[#7E3F98] text-xl text-white">
@@ -17,7 +32,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
         <tbody className="w-fit">
           <tr className="h-[10rem]">
             <td className="">
-              <img src="nostro.webp" className="w-[15rem]" />
+              <img src="nostro.webp" alt="nostro" className="w-[15rem]" />
             </td>
             <td>Nostro 440EC</td>
             <td>Fungicide Selective Pre & Post-Emergent</td>
@@ -26,7 +41,13 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
               control both broadleaf and narrow-leaf weeds in corn crops. <br />
               Crop Target: corn
               <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
+              <button
+                className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white"
+                onClick={() => {
+                  setActive(true);
+                  setUrl("nostro.png");
+                }}
+              >
                 Details
               </button>
             </td>
@@ -37,7 +58,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="partners.webp" className="w-[15rem]" />
+              <img src="partners.webp" alt="partners" className="w-[15rem]" />
             </td>
             <td>Partners 722SL</td>
             <td>
@@ -49,7 +70,13 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
               <br />
               Crop Target: rice
               <br />
-              <button className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white">
+              <button
+                className=" h-[2rem] w-[5rem] rounded-md bg-orange-400 text-white"
+                onClick={() => {
+                  setActive(true);
+                  setUrl("partners.png");
+                }}
+              >
                 Details
               </button>
             </td>
@@ -60,7 +87,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="fenapir.webp" className="w-[15rem]" />
+              <img src="fenapir.webp" alt="fenapir" className="w-[15rem]" />
             </td>
             <td>Fenapir 450SC</td>
             <td>
@@ -83,7 +110,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="proteger.webp" className="w-[15rem]" />
+              <img src="proteger.webp" alt="proteger" className="w-[15rem]" />
             </td>
             <td>Proteger</td>
             <td>
@@ -115,7 +142,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
         <tbody>
           <tr className="h-[10rem]">
             <td>
-              <img src="nostro.webp" className="w-[15rem]" />
+              <img src="nostro.webp" alt="nostro" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -124,7 +151,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="partners.webp" className="w-[15rem]" />
+              <img src="partners.webp" alt="partners" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -133,7 +160,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="fenapir.webp" className="w-[15rem]" />
+              <img src="fenapir.webp" alt="fenapir" className="w-[15rem]" />
             </td>
           </tr>
           <tr>
@@ -142,7 +169,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="proteger.webp" className="w-full" />
+              <img src="proteger.webp" alt="proteger" className="w-full" />
             </td>
           </tr>
           <tr>

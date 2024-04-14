@@ -9,16 +9,16 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
 ) => {
   const router = useRouter();
   return (
-    <header
+    <section
       id="section"
       className="container mt-[5rem] flex w-full flex-col text-center md:h-auto md:flex-row md:text-justify"
     >
       <div className="text-[#0D2A40]">
         <div className="flex w-full flex-col justify-center md:flex-row">
-          <img src="factory.webp" className="h-fit md:mb-5 md:w-[35rem]" />
+          <img src="factory.webp" className="h-fit md:mb-5 md:w-1/2" />
           <div className="mb-20 md:ml-[5rem]">
-            <h1 className="mb-5 mt-10 text-center text-3xl md:mt-0 md:text-left md:text-6xl md:font-bold">
-              About our company
+            <h1 className="mb-5 mt-10 w-full text-3xl font-semibold md:mt-0 md:text-4xl md:font-bold">
+              About <br /> our company
             </h1>
             <p className="text-justify text-base">
               As a leading science-based agtech company, we help millions of
@@ -93,7 +93,7 @@ const AboutUsExplanation: React.FunctionComponent<IAboutUsExplanationProps> = (
           </p>
         </div>
       </div>
-    </header>
+    </section>
   );
 };
 

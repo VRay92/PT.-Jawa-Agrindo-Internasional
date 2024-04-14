@@ -3,6 +3,7 @@ import Herbicide from "./Herbicide";
 import Fungicide from "./Fungicide";
 import Insecticide from "./Insecticide";
 import Adjuvant from "./Adjuvant";
+import { IoCloseSharp } from "react-icons/io5";
 
 interface IProductsCatalogueProps {}
 

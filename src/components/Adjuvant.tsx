@@ -17,7 +17,11 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
         <tbody className="mb-20 w-fit">
           <tr className="h-[10rem]">
             <td className="">
-              <img src="sprayboost.webp" className="w-[15rem]" />
+              <img
+                src="sprayboost.webp"
+                alt="sprayboost"
+                className="w-[15rem]"
+              />
             </td>
             <td>
               Macerio<sup>TM</sup>52WP
@@ -39,7 +43,7 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td className="">
-              <img src="gaplus.webp" className="w-[15rem]" />
+              <img src="gaplus.webp" alt="gaplus" className="w-[15rem]" />
             </td>
             <td>
               Piribac<sup>TM</sup>400SC
@@ -73,7 +77,11 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
         <tbody>
           <tr className="h-[10rem]">
             <td>
-              <img src="sprayboost.webp" className="w-[15rem]" />
+              <img
+                src="sprayboost.webp"
+                alt="sprayboost"
+                className="w-[15rem]"
+              />
             </td>
           </tr>
           <tr>
@@ -82,7 +90,7 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
 
           <tr className="h-[10rem]">
             <td>
-              <img src="gaplus.webp" className="w-full" />
+              <img src="gaplus.webp" alt="gaplus" className="w-full" />
             </td>
           </tr>
           <tr>
@@ -95,13 +103,3 @@ const Adjuvant: React.FunctionComponent<IAdjuvantProps> = (props) => {
 };
 
 export default Adjuvant;
-{
-  /* <div className="flex flex-col w-6/12 space-y-10 pt-10">
-        <img src="kloopir.jpg" className="w-[15rem]" />
-      </div>
-      <div className="flex  flex-col w-6/12 h-[20rem]">
-        <img src="pounder.jpg" />
-        <img src="vectral.jpg" />
-        <img src="piribac.png" />
-      </div> */
-}
