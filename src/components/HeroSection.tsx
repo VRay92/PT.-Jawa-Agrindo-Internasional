@@ -77,6 +77,7 @@ const HeroSection: React.FunctionComponent<IHeroSectionProps> = (props) => {
             src="product.webp"
             className="hidden h-[10rem] md:relative md:-bottom-10 md:block md:h-[15rem]"
             onLoad={() => setLoading(false)}
+
           />
         </div>
       </header>
