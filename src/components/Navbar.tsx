@@ -1,7 +1,7 @@
 "use client";
 import * as React from "react";
 import { SlMagnifier } from "react-icons/sl";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { BiMenuAltRight } from "react-icons/bi";
 
 interface INavbarProps {}
@@ -9,7 +9,6 @@ interface INavbarProps {}
 const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
   const router = useRouter();
   const [onClick, SetOnClick] = React.useState(false);
-  const [active, setActive] = React.useState("home");
   return (
     <div className="relative">
       <nav className="relative bg-[#ffc132]">
@@ -21,7 +20,6 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
               className="w-[18rem] cursor-pointer"
               onClick={() => {
                 router.push("/");
-                setActive("home");
               }}
             />
 
@@ -31,38 +29,34 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
               className="hidden items-center text-[#0D2A40] md:flex"
             >
               <button
-                className={`h-[5rem] px-4 hover:border-b-4 hover:border-white hover:text-white  ${active === "home" ? "border-b-4 border-white text-white" : ""}`}
+                className={`h-[5rem] px-4 hover:border-b-4 hover:border-white hover:text-white  ${usePathname() === "/" ? "border-b-4 border-white text-white" : ""}`}
                 onClick={() => {
                   router.push("/");
-                  setActive("home");
                 }}
               >
                 Home
               </button>
 
               <button
-                className={`h-[5rem] border-b-4 border-[#ffc132] px-4 hover:border-white hover:text-white ${active === "about" ? "border-b-4 border-white text-white" : ""}`}
+                className={`h-[5rem] border-b-4 border-[#ffc132] px-4 hover:border-white hover:text-white ${usePathname() === "/about" ? "border-b-4 border-white text-white" : ""}`}
                 onClick={() => {
                   router.push("/about");
-                  setActive("about");
                 }}
               >
                 About
               </button>
               <button
-                className={`h-[5rem] border-b-4 border-[#ffc132] px-4 hover:border-white hover:text-white ${active === "product" ? "border-b-4 border-white text-white" : ""}`}
+                className={`h-[5rem] border-b-4 border-[#ffc132] px-4 hover:border-white hover:text-white ${usePathname() === "/products" ? "border-b-4 border-white text-white" : ""}`}
                 onClick={() => {
                   router.push("/products");
-                  setActive("product");
                 }}
               >
                 Product
               </button>
               <button
-                className={`mr-5 h-[5rem] border-b-4 border-[#ffc132] px-4 hover:border-white hover:text-white ${active === "teams" ? "border-b-4 border-white text-white" : ""}`}
+                className={`mr-5 h-[5rem] border-b-4 border-[#ffc132] px-4 hover:border-white hover:text-white ${usePathname() === "/teams" ? "border-b-4 border-white text-white" : ""}`}
                 onClick={() => {
                   router.push("/teams");
-                  setActive("teams");
                 }}
               >
                 Teams
@@ -75,7 +69,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                   <SlMagnifier color="black" />
                   <input
                     type="text"
-                    className="h-[2.2rem] rounded-r-md"
+                    className="h-[2.2rem] rounded-r-md border-none"
                     placeholder="Search.."
                   />
                 </div>
