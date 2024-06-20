@@ -15,7 +15,7 @@ const Fungicide: React.FunctionComponent<IFungicideProps> = (props) => {
       {active && (
         <div
           id="photo-product"
-          className="fixed left-0 top-0  z-[36] h-full w-full bg-black bg-opacity-50 backdrop-blur-sm backdrop-filter"
+          className="fixed left-0 top-0  z-[99] h-full w-full bg-black bg-opacity-50 backdrop-blur-sm backdrop-filter"
         >
           <Modal url={url} click={closeModal}></Modal>
         </div>
