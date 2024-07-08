@@ -1,3 +1,22 @@
+This is a company profile website for an Agricultural Company in East Java.
+
+Features: 
+- Focus: Front-End Development
+- Teams Page: Showcases team members, their expertise, and contact information (fetch API from
+https://randomuser.me/)
+- Usage of React Hook: useState, useEffect
+  
+Tech Stack: Next.js, TypeScript, Tailwind CSS, Axios
+<br/>
+<img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" height="50">
+<img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3"  height="50">
+<img src="https://img.shields.io/badge/-TypeScript-007ACC?style=flat-square&logo=typescript"  height="50">
+<img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black" height="50">
+<img src="https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs" height="50">
+<img src="https://img.shields.io/badge/-Axios-5A29E4?style=flat-square&logo=axios&logoColor=white" height="50">
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
