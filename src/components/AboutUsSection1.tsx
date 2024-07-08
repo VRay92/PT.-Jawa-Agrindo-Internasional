@@ -42,7 +42,7 @@ const AboutUsSection1: React.FunctionComponent<IAboutUsSection1Props> = (
   return (
     <section className=" container bg-[#ebecf0] py-[5rem]">
       {loading && (
-        <div className="absolute left-0 top-0 z-[36] h-screen w-screen bg-black bg-opacity-50 backdrop-blur-sm backdrop-filter">
+        <div className="fixed left-0 top-0 h-screen w-screen bg-black bg-opacity-50 backdrop-blur-sm backdrop-filter">
           <span className="absolute left-1/2 top-2/4 -translate-x-1/2 -translate-y-1/2  p-0.5 px-2 text-center text-xs font-medium leading-none text-blue-800 dark:bg-blue-900 dark:text-blue-200">
             <div className="flex h-56 w-56 items-center justify-center rounded-lg border border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-800">
               <div role="status">
