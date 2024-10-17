@@ -6,7 +6,7 @@ Features:
 https://randomuser.me/)
 - Usage of React Hook: useState, useEffect.
   
-Tech Stack: Next.js, TypeScript, Tailwind CSS, Axios
+Tech Stack: Next.js, TypeScript, Tailwind CSS, Axios.
 <br/>
 <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" height="50">
 <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3"  height="50">
