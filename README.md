@@ -3,7 +3,7 @@ This is a company profile website for an Agricultural Company in East Java.
 Features: 
 - Focus: Front-End Development.
 - Teams Page: Showcases team members, their expertise, and contact information (fetch API from
-https://randomuser.me/)
+https://randomuser.me/).
 - Usage of React Hook: useState, useEffect.
   
 Tech Stack: Next.js, TypeScript, Tailwind CSS, Axios.
